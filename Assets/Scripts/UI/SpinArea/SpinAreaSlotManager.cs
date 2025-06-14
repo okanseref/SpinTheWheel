@@ -26,17 +26,18 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
         SpinButton.onClick.AddListener(OnSpinClicked);
     }
 
-    public void Init(ZoneSettings zoneSettings)
+    public void Init(ZoneSettings zoneSettings, ZoneType zoneType)
     {
         ClearArea();
         
         for (int i = 0; i < zoneSettings.Rewards.Count; i++)
         {
-            if (i == zoneSettings.BombIndex)
+            if (i == zoneSettings.BombIndex && zoneType == ZoneType.Basic)
             {
                 // Put bomb
                 DeathSlotView.transform.SetParent(SpinSlotRoots[i]);
                 DeathSlotView.gameObject.SetActive(true);
+                continue;
             }
 
             var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(zoneSettings.Rewards[i], SpinSlotRoots[i]);

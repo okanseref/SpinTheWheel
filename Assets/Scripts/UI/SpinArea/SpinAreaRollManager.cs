@@ -24,5 +24,10 @@ namespace UI.SpinArea
                 .SetEase(easeType)
                 .OnComplete(() => onComplete?.Invoke());
         }
+
+        public void ResetRoll()
+        {
+            _rollAreaRoot.transform.localRotation = Quaternion.identity;
+        }
     }
 }

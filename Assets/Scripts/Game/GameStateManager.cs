@@ -1,4 +1,5 @@
-﻿using UI.SpinArea;
+﻿using UI.RewardArea;
+using UI.SpinArea;
 using UI.SpinArea.Signal;
 using UnityEngine;
 using Utils;
@@ -8,9 +9,11 @@ namespace Game
 {
     public class GameStateManager : MonoBehaviour
     {
-        private int _currentZone = 0;
+        private int _currentZoneIndex = 0;
         private int _rollResult = -1;
         private ZoneSettings _currentZoneSettings;
+        private ZoneType _zoneType;
+        
         private void Start()
         {
             PrepareForSpin();
@@ -18,11 +21,22 @@ namespace Game
 
         private void PrepareForSpin()
         {
-            var currentZone = GameInfoManager.Instance.GetZoneLooped(_currentZone);
+            // Clone because we might modify if its golden
+            _currentZoneSettings = GameInfoManager.Instance.GetZoneLooped(_currentZoneIndex).Clone();
+            _zoneType = GameInfoManager.Instance.GetZoneType(_currentZoneIndex);
+
+            if (_zoneType == ZoneType.Golden)
+            {
+                foreach (var reward in _currentZoneSettings.Rewards)
+                {
+                    reward.Value *= GameInfoManager.Instance.SpecialZoneSettings.GoldenSpinRewardMultiplier;
+                }
+            }
             
-            SpinAreaSlotManager.Instance.Init(currentZone);
-            SpinAreaThemeManager.Instance.LoadSpinArea();
-            
+            SpinAreaSlotManager.Instance.Init(_currentZoneSettings, _zoneType);
+            SpinAreaThemeManager.Instance.LoadSpinArea(_zoneType);
+            SpinAreaRollManager.Instance.ResetRoll();
+
             SignalBus.Instance.Subscribe<SpinClickedSignal>(StartSpin);
         }
 
@@ -36,7 +50,17 @@ namespace Game
 
         private void OnRollComplete()
         {
+            // if (_zoneType == ZoneType.Basic && _currentZoneSettings.BombIndex == _rollResult)
+            // {
+            //     // Lose
+            //     ////////////////////
+            //     return;
+            // }
+            //
             // Give rewards
+            RewardAreaManager.Instance.AddReward(_currentZoneSettings.Rewards[_rollResult]);
+
+            _currentZoneIndex++;
             PrepareForSpin();
         }
     }

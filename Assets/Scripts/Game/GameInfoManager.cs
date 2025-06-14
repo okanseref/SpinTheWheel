@@ -20,5 +20,16 @@ namespace Game
             zoneIndex %= ZoneSettingsCollection.ZoneSettingsList.Count;
             return ZoneSettingsCollection.ZoneSettingsList[zoneIndex];
         }
+
+        public ZoneType GetZoneType(int zoneIndex)
+        {
+            if (zoneIndex != 0 && zoneIndex % SpecialZoneSettings.GoldenSpinPeriod  == 0)
+                return ZoneType.Golden;
+            
+            if (zoneIndex != 0 && zoneIndex % SpecialZoneSettings.SilverSpinPeriod  == 0)
+                return ZoneType.Silver;
+
+            return ZoneType.Basic;
+        }
     }
 }
