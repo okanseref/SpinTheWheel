@@ -9,7 +9,7 @@ namespace Exchange
     {
         private Dictionary<ExchangeType, Dictionary<int, Sprite>> _exchangeVisualDictionary = new();
 
-        void Start()
+        void Awake()
         {
             var allExchangeVisuals = Resources.LoadAll<Sprite>("ExchangeVisuals");
             
