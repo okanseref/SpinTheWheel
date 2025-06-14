@@ -2388,8 +2388,44 @@ Transform:
   - {fileID: 2146391332}
   - {fileID: 1679241127}
   - {fileID: 596770533}
+  - {fileID: 1898159891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1266493805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266493806}
+  m_Layer: 5
+  m_Name: ui_transform_popups_root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1266493806
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266493805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1956606014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1324004825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2622,13 @@ MonoBehaviour:
   SpinAreaCursorImage: {fileID: 500760513}
   SpinAreaBaseImage: {fileID: 428707025}
   SpinAreaTitleText: {fileID: 1085067145}
-  SpinAreaBonusText: {fileID: 0}
+  SpinAreaBonusText: {fileID: 1816089109}
+  SpinBronzeBase: {fileID: 21300000, guid: 4cfe9ee513719784e9db858efa6c81f2, type: 3}
+  SpinBronzeCursor: {fileID: 21300000, guid: 22fda78c50619d84eb420e72886f52bc, type: 3}
+  SpinSilverBase: {fileID: 21300000, guid: 7a3b63baaabba77489a21fd8d11b41d0, type: 3}
+  SpinSilverCursor: {fileID: 21300000, guid: 4e67826505332b4419ea2f2c88820a70, type: 3}
+  SpinGoldenBase: {fileID: 21300000, guid: a05b6dd41d23d66499d113d4fc593aa7, type: 3}
+  SpinGoldenCursor: {fileID: 21300000, guid: 7783bb3e16d26bd4e81ce3e37caef656, type: 3}
 --- !u!1 &1679241126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,8 +2674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rollAreaRoot: {fileID: 428707024}
-  duration: 2
-  fullTurns: 4
+  duration: 0.1
+  fullTurns: 2
   rotateMode: 1
   easeType: 4
 --- !u!1 &1716487396
@@ -3099,6 +3141,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870205593}
   m_CullTransparentMesh: 1
+--- !u!1 &1898159890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898159891}
+  - component: {fileID: 1898159892}
+  m_Layer: 0
+  m_Name: RewardAreaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1898159891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898159890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1171264581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1898159892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898159890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca98f28852e649e7a8d236e7fb5f54bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RewardRootTransform: {fileID: 1064648465}
 --- !u!1 &1956606010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3284,7 @@ RectTransform:
   - {fileID: 132140191}
   - {fileID: 273106717}
   - {fileID: 40257171}
+  - {fileID: 1266493806}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

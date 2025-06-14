@@ -12,6 +12,11 @@ namespace UI.Exchange
         public void Init(Sprite sprite, int value)
         {
             ExchangeVisualImage.sprite = sprite;
+            SetValueText(value);
+        }
+
+        public void SetValueText(int value)
+        {
             ValueText.text = "x" + NumberFormatter.FormatCompact(value);
         }
     }
