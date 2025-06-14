@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UI.Exchange;
 using UnityEngine;
+using Utils;
 using Zone;
 
-public class SpinAreaSlotManager : MonoBehaviour
+public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
 {
     [SerializeField] public List<Transform> SpinSlotRoots;
     [SerializeField] public GameObject DeathSlotView;

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59edec46f6354b35aed8681a53432c98, type: 3}
-  m_Name: ZoneSettingsList
+  m_Name: ZoneSettingsCollection
   m_EditorClassIdentifier: 
   ZoneSettingsList:
   - BombIndex: 0
