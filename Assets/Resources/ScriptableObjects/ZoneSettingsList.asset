@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: ZoneSettingsList
   m_EditorClassIdentifier: 
   ZoneSettingsList:
-  - Rewards:
-    - Type: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 3
@@ -29,23 +33,30 @@ MonoBehaviour:
     - Type: 1
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
@@ -54,32 +65,43 @@ MonoBehaviour:
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 1
+      Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
@@ -95,36 +117,41 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
@@ -136,20 +163,24 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 3
+  - BombIndex: 0
+    Rewards:
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
@@ -164,10 +195,20 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
@@ -175,28 +216,46 @@ MonoBehaviour:
       Subtype: 1
       Value: 1
     - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 4
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 1
     - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
@@ -205,66 +264,69 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
@@ -274,61 +336,62 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 1
@@ -337,86 +400,102 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
@@ -425,20 +504,27 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 4
@@ -447,14 +533,15 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
@@ -466,26 +553,27 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
@@ -494,35 +582,43 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 4
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
@@ -532,83 +628,99 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 1
+      Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
@@ -620,48 +732,53 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 4
+  - BombIndex: 0
+    Rewards:
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
@@ -670,10 +787,14 @@ MonoBehaviour:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
@@ -683,86 +804,91 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+  - BombIndex: 0
+    Rewards:
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 2
@@ -771,45 +897,44 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 1
@@ -818,17 +943,18 @@ MonoBehaviour:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 3
@@ -840,48 +966,59 @@ MonoBehaviour:
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 1
+      Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 2
+    - Type: 1
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 4
@@ -890,55 +1027,50 @@ MonoBehaviour:
     - Type: 1
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
@@ -947,32 +1079,38 @@ MonoBehaviour:
     - Type: 1
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 4
@@ -981,32 +1119,61 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
+    - Type: 4
+      Subtype: 1
+      Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 4
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 4
       Subtype: 1
       Value: 1
     - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 1
+      Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-  - Rewards:
+  - BombIndex: 0
+    Rewards:
     - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
@@ -1016,100 +1183,133 @@ MonoBehaviour:
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 2
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
-  - Rewards:
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 2
+    - Type: 3
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 1
+      Value: 1
     - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 3
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 1
     - Type: 2
+      Subtype: 1
+      Value: 1
+    - Type: 1
       Subtype: 1
       Value: 1
+  - BombIndex: 0
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 1
+    - Type: 3
       Subtype: 1
       Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 1
     - Type: 1
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 1
       Subtype: 1
       Value: 1
-    - Type: 1
+  - BombIndex: 0
+    Rewards:
+    - Type: 2
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-  - Rewards:
-    - Type: 3
+    - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 3
+    - Type: 2
       Subtype: 1
       Value: 1
     - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
       Subtype: 1
       Value: 1
-    - Type: 4
+    - Type: 1
       Subtype: 1
       Value: 1

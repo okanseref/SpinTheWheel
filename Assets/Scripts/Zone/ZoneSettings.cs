@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Exchange;
-using UnityEngine.Serialization;
 
-namespace Spin
+namespace Zone
 {
     [Serializable]
     public class ZoneSettings
     {
+        public int BombIndex;
         public List<ExchangeData> Rewards = new();
     }
 }

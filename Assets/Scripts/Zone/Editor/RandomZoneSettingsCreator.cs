@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Exchange;
-using Spin;
 using UnityEditor;
 using UnityEngine;
+using Zone;
 using Random = UnityEngine.Random;
 
 public class RandomZoneSettingsCreator
@@ -18,7 +17,7 @@ public class RandomZoneSettingsCreator
         {
             var zoneSettings = new ZoneSettings();
             
-            for (int j = 0; j < 7; j++)
+            for (int j = 0; j < 8; j++)
             {
                 zoneSettings.Rewards.Add(GetRandomExchangeData());            
             }
