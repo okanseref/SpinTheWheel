@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UI.Exchange;
+using UI.SpinArea.Signal;
 using UnityEngine;
+using UnityEngine.UI;
 using Utils;
 using Zone;
 
@@ -9,9 +12,20 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
 {
     [SerializeField] public List<Transform> SpinSlotRoots;
     [SerializeField] public GameObject DeathSlotView;
+    [SerializeField] public Button SpinButton;
 
     private List<ExchangeView> _usedViews = new();
-    
+
+    private void Awake()
+    {
+        DeathSlotView.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        SpinButton.onClick.AddListener(OnSpinClicked);
+    }
+
     public void Init(ZoneSettings zoneSettings)
     {
         ClearArea();
@@ -40,5 +54,15 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
         }
         
         _usedViews.Clear();
+    }
+
+    private void OnSpinClicked()
+    {
+        SignalBus.Instance.Fire(new SpinClickedSignal());
+    }
+
+    private void OnValidate()
+    {
+        SpinButton = GameObject.Find("ui_button_spin").GetComponent<Button>();
     }
 }
