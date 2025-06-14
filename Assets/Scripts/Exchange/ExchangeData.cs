@@ -22,5 +22,10 @@ namespace Exchange
             Subtype = subtype;
             Value = value;
         }
+
+        public ExchangeData Clone()
+        {
+            return new ExchangeData(Type, Subtype, Value);
+        }
     }
 }
