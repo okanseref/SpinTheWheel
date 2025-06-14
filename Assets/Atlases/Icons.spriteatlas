@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Icons
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2290a36d46d2df843899c9d5dae576cb, type: 3}
+    - {fileID: 102900000, guid: 74ba14547474a464091e89bbd12f31b6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 3abd6c10c261b2647b98362d7b536dd6: 21300000
+    - 27cbd9b0363045f4780981bb5be36e21: 21300000
+    - ee212901ccd3c9c469cb3192c1e2069b: 21300000
+    - e8b8721138325b44dbad7fae87501739: 21300000
+    - 987280c2e0bb439429123323c5c47c0d: 21300000
+    - 73e8c183922eec24e9684c59d4b5dd2f: 21300000
+    - 320c84f3a68e630418995ec35ace24ea: 21300000
+    - 060f1904b85dc31449ca6284650d938d: 21300000
+    - d0429a34db7cfcc458d96df9b79b63d9: 21300000
+    - 451aeab49400fb2438c93ad808ddd08e: 21300000
+    - 07a17165958e76c42836a816c3474a79: 21300000
+    - d212adb57039ea0409b8e606b2ff9162: 21300000
+    - baabf1c6a10bf1a48848ba2d5e5b9989: 21300000
+    - a13b9837b1c7df2478c6077524df22b0: 21300000
+    - fbe49887286ce0a46b6b98416c7c1d85: 21300000
+    - cce73358e25993f4185bbae4dcc7a24c: 21300000
+    - c8b81a68a3b4a4140b4db580341b45ed: 21300000
+    - 31a29e39f7b040247a05314e52c72d49: 21300000
+    - c4b0092a5f8abd846b9bfed2f4a49012: 21300000
+    - fc8f1e8a4b81c82489c4b9e1b2031e11: 21300000
+    - 53b5a72b2e12aff4d8fbff46c620c1d8: 21300000
+    - 1385943b942d9834f94f040e110b3090: 21300000
+    - 855a8b7baa0f35b40a4d7ad548f2cd07: 21300000
+    - a490138bdd82d574b825480f3d897978: 21300000
+    - 8c61696c5b469e8479e80f6c994f8bfc: 21300000
+    - e420ec7cd587b2c4bb5a8485f8229169: 21300000
+    - e97f968c5da160940be9e0144d52fe56: 21300000
+    - eebfbe6d837c3db419e2a75c298eeef3: 21300000
+    - c874b68de086e3948b1589f3710f364a: 21300000
+    - aa71433e88f376c4ca5c702868a65b69: 21300000
+    - d1812fae6838c4e4ebfeb567b3d7fb4f: 21300000
+    - 2e96e5be844b0284e9c974f705e53965: 21300000
+    - 50d4033f87596b54db700ec8c7c57f18: 21300000
+    - 8777fd6f2da48484baf5f0584a064756: 21300000
+    - be44e19f1288b174d9eee1e2e3cb1a0f: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3abd6c10c261b2647b98362d7b536dd6, type: 3}
+  - {fileID: 21300000, guid: 27cbd9b0363045f4780981bb5be36e21, type: 3}
+  - {fileID: 21300000, guid: ee212901ccd3c9c469cb3192c1e2069b, type: 3}
+  - {fileID: 21300000, guid: e8b8721138325b44dbad7fae87501739, type: 3}
+  - {fileID: 21300000, guid: 987280c2e0bb439429123323c5c47c0d, type: 3}
+  - {fileID: 21300000, guid: 73e8c183922eec24e9684c59d4b5dd2f, type: 3}
+  - {fileID: 21300000, guid: 320c84f3a68e630418995ec35ace24ea, type: 3}
+  - {fileID: 21300000, guid: 060f1904b85dc31449ca6284650d938d, type: 3}
+  - {fileID: 21300000, guid: d0429a34db7cfcc458d96df9b79b63d9, type: 3}
+  - {fileID: 21300000, guid: 451aeab49400fb2438c93ad808ddd08e, type: 3}
+  - {fileID: 21300000, guid: 07a17165958e76c42836a816c3474a79, type: 3}
+  - {fileID: 21300000, guid: d212adb57039ea0409b8e606b2ff9162, type: 3}
+  - {fileID: 21300000, guid: baabf1c6a10bf1a48848ba2d5e5b9989, type: 3}
+  - {fileID: 21300000, guid: a13b9837b1c7df2478c6077524df22b0, type: 3}
+  - {fileID: 21300000, guid: fbe49887286ce0a46b6b98416c7c1d85, type: 3}
+  - {fileID: 21300000, guid: cce73358e25993f4185bbae4dcc7a24c, type: 3}
+  - {fileID: 21300000, guid: c8b81a68a3b4a4140b4db580341b45ed, type: 3}
+  - {fileID: 21300000, guid: 31a29e39f7b040247a05314e52c72d49, type: 3}
+  - {fileID: 21300000, guid: c4b0092a5f8abd846b9bfed2f4a49012, type: 3}
+  - {fileID: 21300000, guid: fc8f1e8a4b81c82489c4b9e1b2031e11, type: 3}
+  - {fileID: 21300000, guid: 53b5a72b2e12aff4d8fbff46c620c1d8, type: 3}
+  - {fileID: 21300000, guid: 1385943b942d9834f94f040e110b3090, type: 3}
+  - {fileID: 21300000, guid: 855a8b7baa0f35b40a4d7ad548f2cd07, type: 3}
+  - {fileID: 21300000, guid: a490138bdd82d574b825480f3d897978, type: 3}
+  - {fileID: 21300000, guid: 8c61696c5b469e8479e80f6c994f8bfc, type: 3}
+  - {fileID: 21300000, guid: e420ec7cd587b2c4bb5a8485f8229169, type: 3}
+  - {fileID: 21300000, guid: e97f968c5da160940be9e0144d52fe56, type: 3}
+  - {fileID: 21300000, guid: eebfbe6d837c3db419e2a75c298eeef3, type: 3}
+  - {fileID: 21300000, guid: c874b68de086e3948b1589f3710f364a, type: 3}
+  - {fileID: 21300000, guid: aa71433e88f376c4ca5c702868a65b69, type: 3}
+  - {fileID: 21300000, guid: d1812fae6838c4e4ebfeb567b3d7fb4f, type: 3}
+  - {fileID: 21300000, guid: 2e96e5be844b0284e9c974f705e53965, type: 3}
+  - {fileID: 21300000, guid: 50d4033f87596b54db700ec8c7c57f18, type: 3}
+  - {fileID: 21300000, guid: 8777fd6f2da48484baf5f0584a064756, type: 3}
+  - {fileID: 21300000, guid: be44e19f1288b174d9eee1e2e3cb1a0f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ExchangeVisual_WeaponProgress_3
+  - ExchangeVisual_Equipable_9
+  - ExchangeVisual_Case_5
+  - ExchangeVisual_Equipable_3
+  - ui_card_icon_death
+  - ExchangeVisual_Equipable_1
+  - ExchangeVisual_Equipable_11
+  - ExchangeVisual_WeaponProgress_5
+  - ExchangeVisual_Case_2
+  - ExchangeVisual_Equipable_12
+  - ExchangeVisual_Equipable_14
+  - ExchangeVisual_WeaponProgress_6
+  - ExchangeVisual_Equipable_10
+  - ExchangeVisual_Currency_2
+  - ExchangeVisual_WeaponProgress_2
+  - ExchangeVisual_Case_3
+  - ExchangeVisual_Equipable_2
+  - ExchangeVisual_Equipable_6
+  - ExchangeVisual_Equipable_7
+  - ExchangeVisual_Case_1
+  - ExchangeVisual_WeaponProgress_4
+  - ExchangeVisual_WeaponProgress_10
+  - ExchangeVisual_WeaponProgress_8
+  - ExchangeVisual_Case_4
+  - ExchangeVisual_Equipable_4
+  - ExchangeVisual_Equipable_15
+  - ExchangeVisual_Case_7
+  - ExchangeVisual_Equipable_5
+  - ExchangeVisual_WeaponProgress_1
+  - ExchangeVisual_WeaponProgress_9
+  - ExchangeVisual_Equipable_13
+  - ExchangeVisual_Case_6
+  - ExchangeVisual_Equipable_8
+  - ExchangeVisual_Currency_1
+  - ExchangeVisual_WeaponProgress_7
+  m_RenderDataMap: {}
+  m_Tag: Icons
+  m_IsVariant: 0

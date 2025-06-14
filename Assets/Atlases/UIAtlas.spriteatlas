@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0d5bd063c0dc36349a0956e0f6ef5d1e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 526ec870c5cf38a4a8b571d87b99a7b2: 21300000
+    - 6468d2f0c2bd3d04f8ecbce1a36dc2f1: 21300000
+    - 47105421503c6514080a514d7278eddd: 21300000
+    - 1a689f822f1fcf14d94cd1fc2cc3596e: 21300000
+    - aa305ed23f8610a4cb49f1ead152d7af: 21300000
+    - ff4563633bbeb0b4fa49446f7d2ad375: 21300000
+    - 948eeb63873df4c46941587f664067c3: 21300000
+    - a05b6dd41d23d66499d113d4fc593aa7: 21300000
+    - 4e67826505332b4419ea2f2c88820a70: 21300000
+    - 4cfe9ee513719784e9db858efa6c81f2: 21300000
+    - 9da85f77f1a3d3d409e4e7edcc5fc227: 21300000
+    - 240ca388e249df348a8934a6d3cf4108: 21300000
+    - f898926a9ec823443b36bd4bc8b2a8f1: 21300000
+    - 7a3b63baaabba77489a21fd8d11b41d0: 21300000
+    - 107fde8b5849a9145b9e9c5b87357469: 21300000
+    - 22fda78c50619d84eb420e72886f52bc: 21300000
+    - fe1d312d756d1c441b9e2b5f4645a07e: 21300000
+    - 33b94e2e563c9f7408011c056be834f0: 21300000
+    - 7783bb3e16d26bd4e81ce3e37caef656: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 526ec870c5cf38a4a8b571d87b99a7b2, type: 3}
+  - {fileID: 21300000, guid: 6468d2f0c2bd3d04f8ecbce1a36dc2f1, type: 3}
+  - {fileID: 21300000, guid: 47105421503c6514080a514d7278eddd, type: 3}
+  - {fileID: 21300000, guid: 1a689f822f1fcf14d94cd1fc2cc3596e, type: 3}
+  - {fileID: 21300000, guid: aa305ed23f8610a4cb49f1ead152d7af, type: 3}
+  - {fileID: 21300000, guid: ff4563633bbeb0b4fa49446f7d2ad375, type: 3}
+  - {fileID: 21300000, guid: 948eeb63873df4c46941587f664067c3, type: 3}
+  - {fileID: 21300000, guid: a05b6dd41d23d66499d113d4fc593aa7, type: 3}
+  - {fileID: 21300000, guid: 4e67826505332b4419ea2f2c88820a70, type: 3}
+  - {fileID: 21300000, guid: 4cfe9ee513719784e9db858efa6c81f2, type: 3}
+  - {fileID: 21300000, guid: 9da85f77f1a3d3d409e4e7edcc5fc227, type: 3}
+  - {fileID: 21300000, guid: 240ca388e249df348a8934a6d3cf4108, type: 3}
+  - {fileID: 21300000, guid: f898926a9ec823443b36bd4bc8b2a8f1, type: 3}
+  - {fileID: 21300000, guid: 7a3b63baaabba77489a21fd8d11b41d0, type: 3}
+  - {fileID: 21300000, guid: 107fde8b5849a9145b9e9c5b87357469, type: 3}
+  - {fileID: 21300000, guid: 22fda78c50619d84eb420e72886f52bc, type: 3}
+  - {fileID: 21300000, guid: fe1d312d756d1c441b9e2b5f4645a07e, type: 3}
+  - {fileID: 21300000, guid: 33b94e2e563c9f7408011c056be834f0, type: 3}
+  - {fileID: 21300000, guid: 7783bb3e16d26bd4e81ce3e37caef656, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UI_button_orange_standard
+  - ui_spin_generic_button
+  - ui_card_panel_zone_coming
+  - ui_card_frame_4px_zone
+  - UI_button_grey_standard
+  - ui_card_panel_zone_current
+  - ui_card_frame_12px_neutral
+  - ui_spin_golden_base
+  - ui_spin_silver_indicator
+  - ui_spin_bronze_base
+  - ui_card_panel_zone_bg
+  - ui_card_panel_zone_super
+  - ui_card_frame_gardient
+  - ui_spin_silver_base
+  - ui_card_zone_map_frame
+  - ui_spin_bronze_indicator
+  - ui_card_panel_zone_current_white
+  - ui_card_panel_zone_white
+  - ui_spin_golden_indicator
+  m_RenderDataMap: {}
+  m_Tag: UIAtlas
+  m_IsVariant: 0
