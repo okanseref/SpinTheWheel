@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Linq;
 using DG.Tweening;
+using Game;
+using Game.Signal;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace UI.Popup
 {
@@ -14,9 +17,14 @@ namespace UI.Popup
 
         private void Start()
         {
-
+            ExitButton.onClick.AddListener(OnExitClicked);
         }
 
+        private void OnExitClicked()
+        {
+            SignalBus.Instance.Fire<GameResetSignal>();
+        }
+        
         private void OnValidate()
         {
             var prefabStage = PrefabStageUtility.GetCurrentPrefabStage();

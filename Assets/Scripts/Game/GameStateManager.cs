@@ -1,4 +1,7 @@
-﻿using UI.RewardArea;
+﻿using Game.Signal;
+using Managers.PopupManager;
+using UI.Popup;
+using UI.RewardArea;
 using UI.SpinArea;
 using UI.SpinArea.Signal;
 using UnityEngine;
@@ -17,6 +20,8 @@ namespace Game
         private void Start()
         {
             PrepareForSpin();
+            
+            SignalBus.Instance.Subscribe<GameResetSignal>(ResetGame);
         }
 
         private void PrepareForSpin()
@@ -50,18 +55,24 @@ namespace Game
 
         private void OnRollComplete()
         {
-            // if (_zoneType == ZoneType.Basic && _currentZoneSettings.BombIndex == _rollResult)
-            // {
-            //     // Lose
-            //     ////////////////////
-            //     return;
-            // }
-            //
+            if (_zoneType == ZoneType.Basic && _currentZoneSettings.BombIndex == _rollResult)
+            {
+                // Lose
+                PopupManager.Instance.Show<LosePopup>();
+                return;
+            }
+            
             // Give rewards
             RewardAreaManager.Instance.AddReward(_currentZoneSettings.Rewards[_rollResult]);
 
             _currentZoneIndex++;
             PrepareForSpin();
+        }
+
+        public void ResetGame()
+        {
+            _currentZoneIndex = 0;
+            RewardAreaManager.Instance.Reset();
         }
     }
 }
