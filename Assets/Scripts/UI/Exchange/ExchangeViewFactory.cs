@@ -10,7 +10,7 @@ namespace UI.Exchange
 
         private GenericObjectPool<ExchangeView> _objectPool;
 
-        private void Start()
+        private void Awake()
         {
             _objectPool = new GenericObjectPool<ExchangeView>(exchangeViewPrefab, 8);
         }
@@ -18,7 +18,10 @@ namespace UI.Exchange
         public ExchangeView CreateExchangeView(ExchangeData exchangeData, Transform customParent)
         {
             ExchangeView viewInstance = _objectPool.Get();
-            viewInstance.transform.SetParent(customParent);
+            Transform exchangeTransform;
+            (exchangeTransform = viewInstance.transform).SetParent(customParent);
+            exchangeTransform.localPosition = Vector3.zero;
+            exchangeTransform.localRotation = Quaternion.identity;
             viewInstance.Init(ExchangeVisualManager.Instance.GetExchangeSprite(exchangeData), exchangeData.Value);
             return viewInstance;
         }
