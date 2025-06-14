@@ -2,6 +2,7 @@
 using Exchange;
 using UI.Exchange;
 using UnityEngine;
+using UnityEngine.UI;
 using Utils;
 
 namespace UI.RewardArea
@@ -36,6 +37,8 @@ namespace UI.RewardArea
                 var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(newReward, RewardRootTransform);
                 RewardViewDictionary.Add(newReward, exchangeView);
             }
+            
+            LayoutRebuilder.ForceRebuildLayoutImmediate(RewardRootTransform as RectTransform);
         }
 
         public void Reset()
