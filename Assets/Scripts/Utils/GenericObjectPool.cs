@@ -31,7 +31,8 @@ namespace Utils
             }
             else
             {
-                obj = CreateNewObject();
+                CreateNewObject();
+                obj = _pool.Pop();
             }
 
             _activeObjects.Add(obj);
