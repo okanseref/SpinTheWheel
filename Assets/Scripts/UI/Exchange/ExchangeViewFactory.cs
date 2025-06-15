@@ -20,6 +20,7 @@ namespace UI.Exchange
             ExchangeView viewInstance = _objectPool.Get();
             Transform exchangeTransform;
             (exchangeTransform = viewInstance.transform).SetParent(customParent);
+            exchangeTransform.localScale = Vector3.one;
             exchangeTransform.localPosition = Vector3.zero;
             exchangeTransform.localRotation = Quaternion.identity;
             viewInstance.Init(ExchangeVisualManager.Instance.GetExchangeSprite(exchangeData), exchangeData.Value);
