@@ -63,10 +63,18 @@ namespace Game
             }
             
             // Give rewards
-            RewardAreaManager.Instance.AddReward(_currentZoneSettings.Rewards[_rollResult]);
+            var reward = _currentZoneSettings.Rewards[_rollResult];
+            SignalBus.Instance.Subscribe<RewardGivenSignal>(OnRewardGiven);
+            PopupManager.Instance.Show<RewardPopup, RewardPopupData>(new RewardPopupData(reward));
+        }
 
+        private void OnRewardGiven(RewardGivenSignal rewardGivenSignal)
+        {
+            RewardAreaManager.Instance.AddReward(rewardGivenSignal.Reward);
             _currentZoneIndex++;
             PrepareForSpin();
+            
+            SignalBus.Instance.Unsubscribe<RewardGivenSignal>(OnRewardGiven);
         }
 
         public void ResetGame()
