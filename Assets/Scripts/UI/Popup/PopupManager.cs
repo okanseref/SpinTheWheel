@@ -85,14 +85,6 @@ namespace Managers.PopupManager
             item.Hide();
         }
 
-        public void OnRootClicked()
-        {
-            var lastPopup = activePopups.Last();
-            if(lastPopup == null)
-                return;
-            Hide(lastPopup);
-        }
-
         private BasePopup TryShowInternal<T>()
         {
             var prefab = GetPopup<T>();
