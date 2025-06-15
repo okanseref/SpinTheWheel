@@ -2,6 +2,7 @@
 using Game.Signal;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utils;
 
@@ -10,11 +11,11 @@ namespace UI.Popup
     public class LosePopup : BasePopup
     {
         [SerializeField] private Button ReviveButton;
-        [SerializeField] private Button ExitButton;
+        [SerializeField] private Button GiveUpButton;
 
         private void Start()
         {
-            ExitButton.onClick.AddListener(OnExitClicked);
+            GiveUpButton.onClick.AddListener(OnExitClicked);
         }
 
         private void OnExitClicked()
@@ -34,7 +35,7 @@ namespace UI.Popup
             if (buttons == null || buttons.Length <= 0) return;
             var buttonsList = buttons.ToList();
             ReviveButton = buttonsList.Find((x)=> x.name.Equals("ui_button_lose_popup_revive"));
-            ExitButton = buttonsList.Find((x)=> x.name.Equals("ui_button_lose_popup_exit"));
+            GiveUpButton = buttonsList.Find((x)=> x.name.Equals("ui_button_lose_popup_give_up"));
         }
     }
 }

@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 632051181752749758}
   - component: {fileID: 2228455746425342570}
   m_Layer: 5
-  m_Name: ui_text_lose_popup_exit
+  m_Name: ui_text_lose_popup_give_up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: GIVE UP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.45
+  m_fontSize: 47.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -563,8 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9206c4b71b4321a232c9d1d7f60151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReviveButton: {fileID: 3149250017003966871}
-  ExitButton: {fileID: 243887406855330212}
+  ReviveButton: {fileID: 0}
+  ExitButton: {fileID: 0}
 --- !u!225 &4670523133576058372
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 3606810648796451198}
   - component: {fileID: 243887406855330212}
   m_Layer: 5
-  m_Name: ui_button_lose_popup_exit
+  m_Name: ui_button_lose_popup_give_up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
