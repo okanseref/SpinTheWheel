@@ -13,5 +13,10 @@ namespace UI.ZoneArea
             zoneText.text = text;
             zoneText.color = color;
         }
+
+        public void ChangeColor(Color color)
+        {
+            zoneText.color = color;
+        }
     }
 }

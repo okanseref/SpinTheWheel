@@ -10,5 +10,9 @@ namespace Game.Signal
         {
             Reward = reward;
         }
+
+        public RewardGivenSignal()
+        {
+        }
     }
 }
