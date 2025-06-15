@@ -11,7 +11,7 @@ namespace Game
 {
     public class GameStateManager : MonoBehaviour
     {
-        private int _currentZoneIndex = 0;
+        private int _currentZoneIndex = GameConstants.FirstLevelIndex;
         private int _rollResult = -1;
         private ZoneSettings _currentZoneSettings;
         private ZoneType _zoneType;
@@ -78,7 +78,7 @@ namespace Game
 
         public void ResetGame()
         {
-            _currentZoneIndex = 0;
+            _currentZoneIndex = GameConstants.FirstLevelIndex;
             RewardAreaManager.Instance.Reset();
             PrepareForSpin();
         }
