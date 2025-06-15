@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Exchange;
+using Managers.PopupManager;
 using UI.Exchange;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,11 +11,17 @@ namespace UI.RewardArea
 {
     public class RewardAreaManager : Singleton<RewardAreaManager>
     {
+        [SerializeField] private Button ExitButton;
         [SerializeField] private Transform RewardRootTransform;
         
         private Dictionary<ExchangeData, ExchangeView> RewardViewDictionary = new();
         private List<ExchangeData> Rewards = new();
-        
+
+        private void Start()
+        {
+            ExitButton.onClick.AddListener(OnExitClicked);
+        }
+
         public void AddReward(ExchangeData exchangeData)
         {
             var itemInRewards = Rewards.Find((x) => x.Type == exchangeData.Type && x.Subtype == exchangeData.Subtype);
@@ -50,6 +58,19 @@ namespace UI.RewardArea
             
             RewardViewDictionary.Clear();
             Rewards.Clear();
+        }
+
+        private void OnExitClicked()
+        {
+            if (Rewards.Count > 0)
+            {
+                PopupManager.Instance.Show<ExitPopup, ExitPopupData>(new ExitPopupData(Rewards));
+            }
+        }
+
+        private void OnValidate()
+        {
+            ExitButton = GameObject.Find("ui_button_exit").GetComponent<Button>();
         }
     }
 }

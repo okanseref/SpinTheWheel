@@ -3254,6 +3254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca98f28852e649e7a8d236e7fb5f54bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExitButton: {fileID: 231243030}
   RewardRootTransform: {fileID: 1064648465}
 --- !u!1 &1956606010
 GameObject:
