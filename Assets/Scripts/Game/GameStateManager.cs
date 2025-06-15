@@ -81,6 +81,7 @@ namespace Game
         {
             _currentZoneIndex = 0;
             RewardAreaManager.Instance.Reset();
+            PrepareForSpin();
         }
     }
 }
