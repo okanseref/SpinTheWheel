@@ -11,7 +11,6 @@ namespace UI.SpinArea
 
         [SerializeField] private float duration = 2f; // Duration in seconds
         [SerializeField] private int fullTurns = 2;   // Number of full 360° turns
-        [SerializeField] private RotateMode rotateMode = RotateMode.FastBeyond360;
         [SerializeField] private Ease easeType = Ease.Linear;
         
         public void StartRoll(int winIndex, Action onComplete)
@@ -20,7 +19,7 @@ namespace UI.SpinArea
             float totalAngle = (fullTurns * 360f) + winIndex * 45;
         
             // Rotate around Z-axis (change the vector for other axes)
-            _rollAreaRoot.DORotate(new Vector3(0, 0, totalAngle), duration, rotateMode)
+            _rollAreaRoot.DORotate(new Vector3(0, 0, totalAngle), duration, RotateMode.FastBeyond360)
                 .SetEase(easeType)
                 .OnComplete(() =>
                 {
