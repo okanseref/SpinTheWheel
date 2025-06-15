@@ -29,7 +29,8 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
     public void Init(ZoneSettings zoneSettings, ZoneType zoneType)
     {
         ClearArea();
-        
+        SpinButton.gameObject.SetActive(true);
+
         for (int i = 0; i < zoneSettings.Rewards.Count; i++)
         {
             if (i == zoneSettings.BombIndex && zoneType == ZoneType.Basic)
@@ -59,6 +60,7 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
 
     private void OnSpinClicked()
     {
+        SpinButton.gameObject.SetActive(false);
         SignalBus.Instance.Fire(new SpinClickedSignal());
     }
 
