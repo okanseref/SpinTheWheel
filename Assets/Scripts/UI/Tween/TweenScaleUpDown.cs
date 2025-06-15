@@ -10,12 +10,12 @@ namespace UI.Tween
         [SerializeField] private float _duration = 0.7f;
         private Vector3 startScale;
         
-        private DG.Tweening.Tween _tween;
+        private Sequence sequence;
 
         private void Start()
         {
             startScale = transform.localScale;
-            var sequence = DOTween.Sequence();
+            sequence = DOTween.Sequence();
             sequence.Append(transform.DOScale(startScale * (_scaleUpSize), _duration).SetEase(Ease.Linear));
             sequence.Append(transform.DOScale(startScale, _duration).SetEase(Ease.Linear));
             sequence.SetLoops(-1, LoopType.Restart);
@@ -23,7 +23,7 @@ namespace UI.Tween
 
         private void OnDestroy()
         {
-            _tween.Kill();
+            sequence.Kill();
         }
     }
 }
