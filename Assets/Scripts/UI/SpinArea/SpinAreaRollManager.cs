@@ -22,7 +22,10 @@ namespace UI.SpinArea
             // Rotate around Z-axis (change the vector for other axes)
             _rollAreaRoot.DORotate(new Vector3(0, 0, totalAngle), duration, rotateMode)
                 .SetEase(easeType)
-                .OnComplete(() => onComplete?.Invoke());
+                .OnComplete(() =>
+                {
+                    DOVirtual.DelayedCall(0.5f, () => onComplete?.Invoke());
+                });
         }
 
         public void ResetRoll()
