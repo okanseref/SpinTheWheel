@@ -9,7 +9,7 @@ namespace UI.Popup
         private const Ease Ease = DG.Tweening.Ease.Linear;
         private const float Duration = 0.1f;
 
-        private void Start()
+        private void Awake()
         {
             _canvasGroup = GetComponent<CanvasGroup>();
         }
@@ -41,6 +41,10 @@ namespace UI.Popup
                     {
                         Destroy(this.gameObject);
                     });
+            }
+            else
+            {
+                Destroy(this.gameObject);
             }
         }
 
