@@ -27,12 +27,6 @@ namespace UI.Popup
                 _canvasGroup.alpha = 0.5f;
                 DOTween.To(()=> _canvasGroup.alpha, x=> _canvasGroup.alpha = x, 1f, Duration).SetEase(Ease);
             }
-            
-            gameObject.transform.localScale = Vector3.one * 0.8f;
-            this.gameObject.transform.DOScale(1f, Duration).SetEase(Ease).OnComplete(() =>
-            {
-                
-            });
         }
 
         public virtual void Hide()
@@ -42,13 +36,12 @@ namespace UI.Popup
             if (_canvasGroup != null)
             {
                 _canvasGroup.alpha = 1f;
-                DOTween.To(()=> _canvasGroup.alpha, x=> _canvasGroup.alpha = x, 0.5f, Duration).SetEase(Ease);
+                DOTween.To(()=> _canvasGroup.alpha, x=> _canvasGroup.alpha = x, 0.5f, Duration).SetEase(Ease).OnComplete(
+                    () =>
+                    {
+                        Destroy(this.gameObject);
+                    });
             }
-            
-            this.gameObject.transform.DOScale(0.8f, Duration).SetEase(Ease).OnComplete(() =>
-            {
-                Destroy(this.gameObject);
-            });
         }
 
         public bool CheckData<T, T1>()

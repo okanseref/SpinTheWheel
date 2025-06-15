@@ -37,6 +37,16 @@ public class RewardPopup : BasePopup
         SignalBus.Instance.Fire(new RewardGivenSignal(_rewardPopupData.Reward));
         Hide();
     }
+
+    public override void Show()
+    {
+        //
+    }
+
+    public override void Hide()
+    {
+        Destroy(this.gameObject);
+    }
 }
 
 public class RewardPopupData
