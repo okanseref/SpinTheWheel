@@ -44,6 +44,7 @@ namespace Utils
         {
             if (_activeObjects.Remove(obj))
             {
+                obj.transform.SetParent(null);
                 obj.gameObject.SetActive(false);
                 _pool.Push(obj);
             }
@@ -57,6 +58,7 @@ namespace Utils
         {
             foreach (var obj in _activeObjects)
             {
+                obj.transform.SetParent(null);
                 obj.gameObject.SetActive(false);
                 _pool.Push(obj);
             }
