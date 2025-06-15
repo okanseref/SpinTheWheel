@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace UI.Tween
@@ -8,6 +9,9 @@ namespace UI.Tween
         [SerializeField] private float _scaleUpSize = 1.1f;
         [SerializeField] private float _duration = 0.7f;
         private Vector3 startScale;
+        
+        private DG.Tweening.Tween _tween;
+
         private void Start()
         {
             startScale = transform.localScale;
@@ -15,6 +19,11 @@ namespace UI.Tween
             sequence.Append(transform.DOScale(startScale * (_scaleUpSize), _duration).SetEase(Ease.Linear));
             sequence.Append(transform.DOScale(startScale, _duration).SetEase(Ease.Linear));
             sequence.SetLoops(-1, LoopType.Restart);
+        }
+
+        private void OnDestroy()
+        {
+            _tween.Kill();
         }
     }
 }
