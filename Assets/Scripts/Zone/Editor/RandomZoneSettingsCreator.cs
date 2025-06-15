@@ -25,7 +25,7 @@ public class RandomZoneSettingsCreator
             ZoneSettingsList.Add(zoneSettings);
         }
 
-        var zoneSettingsCollection = Resources.Load<ZoneSettingsCollection>("ScriptableObjects/ZoneSettingsList");
+        var zoneSettingsCollection = Resources.Load<ZoneSettingsCollection>("ScriptableObjects/ZoneSettingsCollection");
         zoneSettingsCollection.ZoneSettingsList = ZoneSettingsList;
         
 #if UNITY_EDITOR
