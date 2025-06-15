@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using DG.Tweening;
-using Game;
+﻿using System.Linq;
 using Game.Signal;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -10,7 +7,7 @@ using Utils;
 
 namespace UI.Popup
 {
-    public class LosePopup : MonoBehaviour
+    public class LosePopup : BasePopup
     {
         [SerializeField] private Button ReviveButton;
         [SerializeField] private Button ExitButton;
@@ -23,6 +20,7 @@ namespace UI.Popup
         private void OnExitClicked()
         {
             SignalBus.Instance.Fire<GameResetSignal>();
+            Hide();
         }
         
         private void OnValidate()

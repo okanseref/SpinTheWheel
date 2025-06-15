@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9206c4b71b4321a232c9d1d7f60151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReviveButton: {fileID: 0}
-  ExitButton: {fileID: 0}
+  ReviveButton: {fileID: 6291148945179014548}
+  ExitButton: {fileID: 1730813660472758243}
 --- !u!225 &4670523133576058372
 CanvasGroup:
   m_ObjectHideFlags: 0

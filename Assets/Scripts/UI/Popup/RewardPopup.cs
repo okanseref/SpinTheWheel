@@ -26,8 +26,8 @@ public class RewardPopup : BasePopup
         var startScale = cardRootTransform.transform.localScale;
         
         Sequence sequence = DOTween.Sequence();
-        sequence.Append(cardRootTransform.transform.DOScale(startScale * 1.2f, 1f));
-        sequence.Append(cardRootTransform.transform.DOScale(startScale * 0.5f, 0.3f));
+        sequence.Append(cardRootTransform.transform.DOScale(startScale * 1.2f, 0.6f));
+        sequence.Append(cardRootTransform.transform.DOScale(startScale * 0.5f, 0.1f));
         sequence.OnComplete(OnAnimationEnded);
     }
 
