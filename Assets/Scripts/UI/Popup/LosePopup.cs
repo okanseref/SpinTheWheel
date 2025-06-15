@@ -30,12 +30,14 @@ namespace UI.Popup
             if(prefabStage == null)
                 return;
             
-            var buttons = prefabStage.FindComponentsOfType<Button>();
+            var buttons = GetComponentsInChildren<Button>(true);
             
             if (buttons == null || buttons.Length <= 0) return;
             var buttonsList = buttons.ToList();
-            ReviveButton = buttonsList.Find((x)=> x.name.Equals("ui_button_lose_popup_revive"));
-            GiveUpButton = buttonsList.Find((x)=> x.name.Equals("ui_button_lose_popup_give_up"));
+            var reviveButtonReference = buttonsList.Find((x) => x.name.Equals("ui_button_lose_popup_revive"));
+            var giveUpButtonReference = buttonsList.Find((x) => x.name.Equals("ui_button_lose_popup_give_up"));
+            ReviveButton = reviveButtonReference != null ? reviveButtonReference : ReviveButton;
+            GiveUpButton = giveUpButtonReference != null ? giveUpButtonReference : GiveUpButton;
         }
     }
 }
