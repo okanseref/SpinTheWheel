@@ -139,14 +139,4 @@ namespace Managers.PopupManager
             _popupRoot = GameObject.Find("ui_transform_popups_root").transform;
         }
     }
-
-    public class PopupShownSignal
-    {
-        public Type type;
-
-        public PopupShownSignal(Type type)
-        {
-            this.type = type;
-        }
-    }
 }
