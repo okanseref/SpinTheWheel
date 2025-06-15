@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Exchange;
-using Managers.PopupManager;
 using UI.Exchange;
+using UI.Popup;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;

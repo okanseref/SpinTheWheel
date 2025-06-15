@@ -1,5 +1,4 @@
 ﻿using Game.Signal;
-using Managers.PopupManager;
 using UI.Popup;
 using UI.RewardArea;
 using UI.SpinArea;
