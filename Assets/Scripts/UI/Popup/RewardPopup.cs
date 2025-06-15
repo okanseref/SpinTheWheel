@@ -42,11 +42,6 @@ public class RewardPopup : BasePopup
     {
         //
     }
-
-    public override void Hide()
-    {
-        Destroy(this.gameObject);
-    }
 }
 
 public class RewardPopupData
