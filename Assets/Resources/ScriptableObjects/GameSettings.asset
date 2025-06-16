@@ -18,4 +18,4 @@ MonoBehaviour:
   ReviveCost:
     Type: 2
     Subtype: 1
-    Value: 1
+    Value: 1000

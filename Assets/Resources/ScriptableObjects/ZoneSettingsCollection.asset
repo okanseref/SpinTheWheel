@@ -13,1303 +13,1303 @@ MonoBehaviour:
   m_Name: ZoneSettingsCollection
   m_EditorClassIdentifier: Assembly-CSharp:Zone:ZoneSettingsCollection
   ZoneSettingsList:
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+  - BombIndex: 3
     Rewards:
     - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
+      Subtype: 2
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
+      Value: 1000
     - Type: 1
       Subtype: 1
-      Value: 1
+      Value: 2
+    - Type: 2
+      Subtype: 2
+      Value: 4000
     - Type: 4
-      Subtype: 1
+      Subtype: 7
       Value: 1
     - Type: 3
       Subtype: 1
-      Value: 1
+      Value: 6
     - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+      Subtype: 2
+      Value: 9000
+    - Type: 1
+      Subtype: 2
+      Value: 2
+  - BombIndex: 4
     Rewards:
     - Type: 3
-      Subtype: 1
+      Subtype: 5
       Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+    - Type: 4
+      Subtype: 12
       Value: 1
     - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
+      Subtype: 7
       Value: 1
     - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
+      Subtype: 10
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
+      Value: 5000
     - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
+      Subtype: 3
+      Value: 2
   - BombIndex: 0
     Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 9
+      Value: 1
+    - Type: 1
+      Subtype: 6
+      Value: 1
+    - Type: 1
+      Subtype: 6
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
+      Value: 3000
     - Type: 3
       Subtype: 1
       Value: 1
+    - Type: 4
+      Subtype: 15
+      Value: 1
+    - Type: 3
+      Subtype: 9
+      Value: 4
+  - BombIndex: 6
+    Rewards:
     - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 3
+      Subtype: 7
+      Value: 8
+    - Type: 2
+      Subtype: 2
+      Value: 2000
+    - Type: 4
+      Subtype: 13
+      Value: 1
+    - Type: 3
+      Subtype: 3
+      Value: 3
+    - Type: 1
+      Subtype: 3
+      Value: 2
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 4
+      Subtype: 8
+      Value: 1
+  - BombIndex: 6
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 4
+      Subtype: 11
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 2
+    - Type: 1
+      Subtype: 7
+      Value: 1
+    - Type: 2
       Subtype: 1
+      Value: 4000
+    - Type: 1
+      Subtype: 7
+      Value: 2
+    - Type: 2
+      Subtype: 1
+      Value: 1000
+  - BombIndex: 1
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 3000
+    - Type: 3
+      Subtype: 3
+      Value: 9
+    - Type: 1
+      Subtype: 6
+      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 4
+    - Type: 4
+      Subtype: 2
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 9
       Value: 1
+    - Type: 4
+      Subtype: 10
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 1
+  - BombIndex: 5
+    Rewards:
+    - Type: 4
+      Subtype: 8
+      Value: 1
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 3
+      Subtype: 8
+      Value: 9
+    - Type: 2
+      Subtype: 2
+      Value: 7000
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 4
+      Subtype: 9
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 6000
+    - Type: 3
+      Subtype: 2
+      Value: 3
+  - BombIndex: 7
+    Rewards:
+    - Type: 4
+      Subtype: 12
+      Value: 1
+    - Type: 3
+      Subtype: 6
+      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 9
+    - Type: 4
+      Subtype: 11
+      Value: 1
+    - Type: 1
+      Subtype: 3
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 2
+      Subtype: 1
+      Value: 9000
+    - Type: 2
+      Subtype: 1
+      Value: 6000
+  - BombIndex: 5
+    Rewards:
+    - Type: 4
+      Subtype: 9
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 4
+      Subtype: 15
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 7000
+    - Type: 3
+      Subtype: 3
+      Value: 1
+    - Type: 4
+      Subtype: 14
+      Value: 1
+    - Type: 4
+      Subtype: 10
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 8000
+  - BombIndex: 6
+    Rewards:
+    - Type: 3
+      Subtype: 3
+      Value: 9
+    - Type: 4
+      Subtype: 14
+      Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 2
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+    - Type: 2
+      Subtype: 2
+      Value: 3000
+    - Type: 2
+      Subtype: 1
+      Value: 2000
+    - Type: 3
+      Subtype: 10
+      Value: 6
+  - BombIndex: 5
+    Rewards:
     - Type: 4
       Subtype: 1
       Value: 1
     - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 3
       Subtype: 1
+      Value: 4
+    - Type: 4
+      Subtype: 8
+      Value: 1
+    - Type: 1
+      Subtype: 6
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 2
+    - Type: 2
+      Subtype: 1
+      Value: 7000
+    - Type: 2
+      Subtype: 1
+      Value: 5000
+  - BombIndex: 3
+    Rewards:
+    - Type: 1
+      Subtype: 6
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 4
+      Subtype: 8
+      Value: 1
+    - Type: 4
+      Subtype: 11
+      Value: 1
+    - Type: 4
+      Subtype: 12
+      Value: 1
+    - Type: 3
+      Subtype: 2
+      Value: 8
+    - Type: 3
+      Subtype: 9
+      Value: 8
+  - BombIndex: 4
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 5000
+    - Type: 3
+      Subtype: 7
+      Value: 8
+    - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 4
+      Subtype: 4
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 1
+    - Type: 3
+      Subtype: 4
+      Value: 4
+    - Type: 3
+      Subtype: 1
+      Value: 6
+    - Type: 4
+      Subtype: 5
       Value: 1
   - BombIndex: 0
     Rewards:
     - Type: 1
-      Subtype: 1
-      Value: 1
+      Subtype: 2
+      Value: 2
     - Type: 3
       Subtype: 1
-      Value: 1
+      Value: 6
     - Type: 3
+      Subtype: 8
+      Value: 8
+    - Type: 2
       Subtype: 1
-      Value: 1
+      Value: 5000
+    - Type: 2
+      Subtype: 2
+      Value: 2000
     - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
+      Subtype: 13
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
+      Value: 5000
+    - Type: 4
       Subtype: 1
       Value: 1
-  - BombIndex: 0
+  - BombIndex: 7
     Rewards:
     - Type: 3
-      Subtype: 1
-      Value: 1
+      Subtype: 7
+      Value: 7
     - Type: 1
       Subtype: 1
-      Value: 1
+      Value: 2
+    - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 2
+      Subtype: 2
+      Value: 8000
     - Type: 2
       Subtype: 1
+      Value: 5000
+    - Type: 3
+      Subtype: 10
       Value: 1
     - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
+      Subtype: 9
+      Value: 8
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+      Value: 3000
+  - BombIndex: 1
     Rewards:
     - Type: 2
-      Subtype: 1
-      Value: 1
+      Subtype: 2
+      Value: 9000
     - Type: 3
-      Subtype: 1
+      Subtype: 3
+      Value: 7
+    - Type: 2
+      Subtype: 2
+      Value: 2000
+    - Type: 3
+      Subtype: 7
+      Value: 5
+    - Type: 3
+      Subtype: 9
+      Value: 4
+    - Type: 4
+      Subtype: 14
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 2
+    - Type: 1
+      Subtype: 2
+      Value: 2
+  - BombIndex: 4
+    Rewards:
+    - Type: 4
+      Subtype: 5
       Value: 1
     - Type: 4
+      Subtype: 2
+      Value: 1
+    - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 3
+      Subtype: 6
+      Value: 9
+    - Type: 3
+      Subtype: 7
+      Value: 6
+    - Type: 1
+      Subtype: 2
+      Value: 2
+    - Type: 1
+      Subtype: 3
+      Value: 2
+    - Type: 1
+      Subtype: 6
+      Value: 1
+  - BombIndex: 2
+    Rewards:
+    - Type: 4
+      Subtype: 9
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 2
+    - Type: 2
       Subtype: 1
+      Value: 1000
+    - Type: 3
+      Subtype: 6
+      Value: 2
+    - Type: 3
+      Subtype: 10
+      Value: 9
+    - Type: 1
+      Subtype: 5
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
+      Value: 6000
+    - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+      Value: 7000
+  - BombIndex: 1
     Rewards:
     - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
+      Subtype: 6
+      Value: 2
+    - Type: 1
+      Subtype: 3
       Value: 1
     - Type: 2
       Subtype: 1
+      Value: 4000
+    - Type: 3
+      Subtype: 2
       Value: 1
     - Type: 3
-      Subtype: 1
-      Value: 1
+      Subtype: 7
+      Value: 2
+    - Type: 3
+      Subtype: 5
+      Value: 8
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
+      Value: 4000
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+      Value: 2000
+  - BombIndex: 5
     Rewards:
     - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
+      Subtype: 3
+      Value: 9
+    - Type: 2
+      Subtype: 2
+      Value: 3000
     - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
+      Subtype: 7
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 12
       Value: 1
-    - Type: 4
+    - Type: 2
       Subtype: 1
+      Value: 7000
+    - Type: 2
+      Subtype: 1
+      Value: 9000
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 3
+      Subtype: 3
       Value: 1
-  - BombIndex: 0
+  - BombIndex: 6
     Rewards:
     - Type: 1
-      Subtype: 1
+      Subtype: 2
+      Value: 2
+    - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 3
+      Subtype: 3
+      Value: 5
+    - Type: 4
+      Subtype: 11
       Value: 1
     - Type: 1
-      Subtype: 1
-      Value: 1
+      Subtype: 7
+      Value: 2
     - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 3
+      Subtype: 7
+      Value: 7
+    - Type: 2
       Subtype: 1
+      Value: 1000
+  - BombIndex: 3
+    Rewards:
+    - Type: 4
+      Subtype: 14
       Value: 1
-    - Type: 1
+    - Type: 3
+      Subtype: 6
+      Value: 5
+    - Type: 3
+      Subtype: 5
+      Value: 9
+    - Type: 4
+      Subtype: 9
+      Value: 1
+    - Type: 3
+      Subtype: 5
+      Value: 9
+    - Type: 3
+      Subtype: 9
+      Value: 2
+    - Type: 3
       Subtype: 1
+      Value: 7
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+  - BombIndex: 7
+    Rewards:
+    - Type: 3
+      Subtype: 4
+      Value: 5
+    - Type: 4
+      Subtype: 5
+      Value: 1
+    - Type: 3
+      Subtype: 7
+      Value: 6
+    - Type: 1
+      Subtype: 7
+      Value: 2
+    - Type: 3
+      Subtype: 4
+      Value: 9
+    - Type: 2
+      Subtype: 1
+      Value: 2000
+    - Type: 2
+      Subtype: 2
+      Value: 7000
+    - Type: 2
+      Subtype: 1
+      Value: 2000
+  - BombIndex: 6
+    Rewards:
+    - Type: 3
+      Subtype: 7
+      Value: 6
+    - Type: 2
+      Subtype: 2
+      Value: 7000
+    - Type: 4
+      Subtype: 5
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 3
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 12
       Value: 1
+    - Type: 3
+      Subtype: 4
+      Value: 8
+    - Type: 3
+      Subtype: 7
+      Value: 3
     - Type: 1
       Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
+      Value: 2
   - BombIndex: 0
     Rewards:
     - Type: 2
       Subtype: 1
+      Value: 4000
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 1
+      Subtype: 6
       Value: 1
-    - Type: 3
-      Subtype: 1
+    - Type: 4
+      Subtype: 13
+      Value: 1
+    - Type: 4
+      Subtype: 13
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
+      Value: 9000
+    - Type: 2
+      Subtype: 2
+      Value: 1000
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+      Value: 5000
+  - BombIndex: 3
     Rewards:
     - Type: 2
+      Subtype: 2
+      Value: 8000
+    - Type: 3
+      Subtype: 7
+      Value: 3
+    - Type: 2
+      Subtype: 2
+      Value: 2000
+    - Type: 2
       Subtype: 1
+      Value: 7000
+    - Type: 4
+      Subtype: 11
       Value: 1
     - Type: 3
+      Subtype: 4
+      Value: 3
+    - Type: 2
       Subtype: 1
+      Value: 8000
+    - Type: 4
+      Subtype: 10
       Value: 1
-    - Type: 3
+  - BombIndex: 2
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 6000
+    - Type: 2
       Subtype: 1
+      Value: 6000
+    - Type: 1
+      Subtype: 5
       Value: 1
+    - Type: 4
+      Subtype: 13
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 2
     - Type: 3
-      Subtype: 1
+      Subtype: 3
       Value: 1
     - Type: 4
       Subtype: 1
       Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+  - BombIndex: 2
     Rewards:
     - Type: 1
-      Subtype: 1
+      Subtype: 3
+      Value: 2
+    - Type: 4
+      Subtype: 3
       Value: 1
     - Type: 1
-      Subtype: 1
+      Subtype: 6
       Value: 1
     - Type: 4
-      Subtype: 1
+      Subtype: 8
       Value: 1
     - Type: 3
+      Subtype: 3
+      Value: 3
+    - Type: 4
+      Subtype: 10
+      Value: 1
+    - Type: 3
+      Subtype: 2
+      Value: 5
+    - Type: 2
       Subtype: 1
+      Value: 2000
+  - BombIndex: 7
+    Rewards:
+    - Type: 4
+      Subtype: 4
+      Value: 1
+    - Type: 4
+      Subtype: 6
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 2
+      Subtype: 2
+      Value: 6000
+    - Type: 3
+      Subtype: 1
+      Value: 8
+    - Type: 4
+      Subtype: 4
+      Value: 1
+    - Type: 4
+      Subtype: 7
+      Value: 1
+  - BombIndex: 3
+    Rewards:
+    - Type: 3
+      Subtype: 4
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
+      Value: 2000
+    - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
+      Value: 6000
+    - Type: 3
+      Subtype: 7
+      Value: 2
     - Type: 4
-      Subtype: 1
+      Subtype: 11
       Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 2
+    - Type: 3
+      Subtype: 4
+      Value: 7
     - Type: 1
-      Subtype: 1
+      Subtype: 6
       Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
+  - BombIndex: 1
     Rewards:
     - Type: 3
-      Subtype: 1
+      Subtype: 9
+      Value: 6
+    - Type: 4
+      Subtype: 12
       Value: 1
     - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 4
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 3
+      Value: 2
+    - Type: 3
+      Subtype: 9
+      Value: 2
     - Type: 1
-      Subtype: 1
+      Subtype: 7
       Value: 1
     - Type: 1
-      Subtype: 1
+      Subtype: 7
+      Value: 1
+  - BombIndex: 7
+    Rewards:
+    - Type: 3
+      Subtype: 4
       Value: 1
     - Type: 1
+      Subtype: 3
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 3000
+    - Type: 2
       Subtype: 1
+      Value: 3000
+    - Type: 1
+      Subtype: 3
       Value: 1
     - Type: 2
       Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
-  - BombIndex: 0
-    Rewards:
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
-    - Type: 1
-      Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
-      Value: 1
+      Value: 8000
     - Type: 2
-      Subtype: 1
-      Value: 1
+      Subtype: 2
+      Value: 5000
+    - Type: 2
+      Subtype: 2
+      Value: 7000
   - BombIndex: 0
     Rewards:
     - Type: 3
       Subtype: 1
-      Value: 1
+      Value: 9
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 1
+      Subtype: 7
+      Value: 2
     - Type: 4
-      Subtype: 1
+      Subtype: 5
       Value: 1
     - Type: 2
       Subtype: 1
+      Value: 6000
+    - Type: 4
+      Subtype: 7
       Value: 1
     - Type: 3
-      Subtype: 1
-      Value: 1
+      Subtype: 3
+      Value: 5
+    - Type: 1
+      Subtype: 4
+      Value: 2
+  - BombIndex: 6
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 4000
     - Type: 4
-      Subtype: 1
+      Subtype: 4
       Value: 1
     - Type: 2
-      Subtype: 1
-      Value: 1
-    - Type: 4
-      Subtype: 1
-      Value: 1
+      Subtype: 2
+      Value: 9000
     - Type: 3
-      Subtype: 1
+      Subtype: 5
+      Value: 9
+    - Type: 3
+      Subtype: 7
       Value: 1
-  - BombIndex: 0
+    - Type: 2
+      Subtype: 2
+      Value: 8000
+    - Type: 2
+      Subtype: 1
+      Value: 3000
+    - Type: 3
+      Subtype: 4
+      Value: 9
+  - BombIndex: 7
     Rewards:
     - Type: 3
+      Subtype: 2
+      Value: 2
+    - Type: 2
       Subtype: 1
+      Value: 1000
+    - Type: 2
+      Subtype: 1
+      Value: 6000
+    - Type: 1
+      Subtype: 2
+      Value: 2
+    - Type: 4
+      Subtype: 12
+      Value: 1
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 3
+      Subtype: 4
+      Value: 6
+    - Type: 4
+      Subtype: 4
+      Value: 1
+  - BombIndex: 3
+    Rewards:
+    - Type: 1
+      Subtype: 5
+      Value: 1
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 3000
+    - Type: 4
+      Subtype: 13
+      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 4
+    - Type: 4
+      Subtype: 11
+      Value: 1
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 4
+      Subtype: 11
+      Value: 1
+  - BombIndex: 4
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 8000
+    - Type: 3
+      Subtype: 4
+      Value: 8
+    - Type: 3
+      Subtype: 6
+      Value: 9
+    - Type: 2
+      Subtype: 1
+      Value: 2000
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 3
+      Subtype: 9
+      Value: 9
+    - Type: 3
+      Subtype: 2
+      Value: 2
+    - Type: 3
+      Subtype: 3
+      Value: 9
+  - BombIndex: 1
+    Rewards:
+    - Type: 3
+      Subtype: 10
+      Value: 8
+    - Type: 4
+      Subtype: 5
+      Value: 1
+    - Type: 1
+      Subtype: 5
+      Value: 1
+    - Type: 3
+      Subtype: 7
+      Value: 7
+    - Type: 4
+      Subtype: 13
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 4
+      Subtype: 9
+      Value: 1
+  - BombIndex: 2
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 1
+      Subtype: 3
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 2000
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 2
+      Subtype: 1
+      Value: 6000
+    - Type: 3
+      Subtype: 7
+      Value: 1
+    - Type: 3
+      Subtype: 3
+      Value: 7
+    - Type: 3
+      Subtype: 7
+      Value: 6
+  - BombIndex: 4
+    Rewards:
+    - Type: 2
+      Subtype: 1
+      Value: 4000
+    - Type: 4
+      Subtype: 4
       Value: 1
     - Type: 2
       Subtype: 1
+      Value: 1000
+    - Type: 1
+      Subtype: 3
       Value: 1
     - Type: 3
+      Subtype: 10
+      Value: 2
+    - Type: 4
+      Subtype: 2
+      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 7
+    - Type: 3
+      Subtype: 9
+      Value: 1
+  - BombIndex: 6
+    Rewards:
+    - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 3
+      Subtype: 4
+      Value: 4
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 1
+      Subtype: 3
+      Value: 1
+    - Type: 2
       Subtype: 1
+      Value: 8000
+    - Type: 3
+      Subtype: 4
+      Value: 5
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 3
+      Subtype: 3
+      Value: 8
+  - BombIndex: 7
+    Rewards:
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 1
+      Subtype: 6
       Value: 1
     - Type: 1
       Subtype: 1
+      Value: 2
+    - Type: 2
+      Subtype: 1
+      Value: 4000
+    - Type: 4
+      Subtype: 3
+      Value: 1
+    - Type: 2
+      Subtype: 1
+      Value: 4000
+    - Type: 3
+      Subtype: 3
+      Value: 7
+  - BombIndex: 1
+    Rewards:
+    - Type: 4
+      Subtype: 9
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 4
+      Subtype: 4
       Value: 1
     - Type: 3
       Subtype: 1
-      Value: 1
-    - Type: 3
-      Subtype: 1
+      Value: 4
+    - Type: 4
+      Subtype: 7
       Value: 1
     - Type: 1
-      Subtype: 1
+      Subtype: 5
+      Value: 2
+    - Type: 4
+      Subtype: 15
+      Value: 1
+  - BombIndex: 5
+    Rewards:
+    - Type: 3
+      Subtype: 5
+      Value: 6
+    - Type: 1
+      Subtype: 4
+      Value: 2
+    - Type: 1
+      Subtype: 7
+      Value: 2
+    - Type: 3
+      Subtype: 7
+      Value: 2
+    - Type: 4
+      Subtype: 3
       Value: 1
     - Type: 4
+      Subtype: 10
+      Value: 1
+    - Type: 3
+      Subtype: 1
+      Value: 7
+    - Type: 3
+      Subtype: 8
+      Value: 9
+  - BombIndex: 0
+    Rewards:
+    - Type: 4
+      Subtype: 6
+      Value: 1
+    - Type: 3
+      Subtype: 7
+      Value: 9
+    - Type: 2
+      Subtype: 2
+      Value: 5000
+    - Type: 3
+      Subtype: 10
+      Value: 4
+    - Type: 4
+      Subtype: 7
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 2000
+    - Type: 3
+      Subtype: 1
+      Value: 8
+    - Type: 1
+      Subtype: 7
+      Value: 2
+  - BombIndex: 7
+    Rewards:
+    - Type: 4
+      Subtype: 4
+      Value: 1
+    - Type: 3
+      Subtype: 5
+      Value: 5
+    - Type: 4
+      Subtype: 6
+      Value: 1
+    - Type: 3
+      Subtype: 8
+      Value: 6
+    - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+    - Type: 2
+      Subtype: 2
+      Value: 6000
+    - Type: 4
+      Subtype: 8
+      Value: 1
+  - BombIndex: 2
+    Rewards:
+    - Type: 1
+      Subtype: 5
+      Value: 2
+    - Type: 1
+      Subtype: 3
+      Value: 2
+    - Type: 3
+      Subtype: 2
+      Value: 7
+    - Type: 2
+      Subtype: 1
+      Value: 7000
+    - Type: 4
+      Subtype: 12
+      Value: 1
+    - Type: 2
+      Subtype: 2
+      Value: 4000
+    - Type: 2
+      Subtype: 1
+      Value: 1000
+    - Type: 4
+      Subtype: 3
+      Value: 1
+  - BombIndex: 1
+    Rewards:
+    - Type: 1
+      Subtype: 3
+      Value: 1
+    - Type: 4
+      Subtype: 8
+      Value: 1
+    - Type: 3
+      Subtype: 7
+      Value: 9
+    - Type: 3
+      Subtype: 3
+      Value: 8
+    - Type: 3
       Subtype: 1
       Value: 1
+    - Type: 3
+      Subtype: 6
+      Value: 6
+    - Type: 4
+      Subtype: 6
+      Value: 1
+    - Type: 1
+      Subtype: 7
+      Value: 2
+  - BombIndex: 2
+    Rewards:
+    - Type: 2
+      Subtype: 2
+      Value: 9000
+    - Type: 4
+      Subtype: 10
+      Value: 1
+    - Type: 3
+      Subtype: 2
+      Value: 7
+    - Type: 2
+      Subtype: 2
+      Value: 8000
+    - Type: 1
+      Subtype: 1
+      Value: 2
+    - Type: 3
+      Subtype: 7
+      Value: 7
+    - Type: 3
+      Subtype: 6
+      Value: 8
+    - Type: 1
+      Subtype: 1
+      Value: 1
+  - BombIndex: 4
+    Rewards:
+    - Type: 3
+      Subtype: 6
+      Value: 8
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 3
+      Subtype: 10
+      Value: 2
+    - Type: 1
+      Subtype: 2
+      Value: 1
+    - Type: 1
+      Subtype: 3
+      Value: 2
+    - Type: 1
+      Subtype: 1
+      Value: 2
+    - Type: 1
+      Subtype: 6
+      Value: 2
+    - Type: 3
+      Subtype: 2
+      Value: 6
