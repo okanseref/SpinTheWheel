@@ -27,7 +27,7 @@ namespace UI.Popup
             var startScale = cardRootTransform.transform.localScale;
         
             Sequence sequence = DOTween.Sequence();
-            sequence.Append(cardRootTransform.transform.DOScale(startScale * 1.2f, 0.2f));
+            sequence.Append(cardRootTransform.transform.DOScale(startScale * 1.2f, 0.4f));
             sequence.Append(cardRootTransform.transform.DOScale(startScale * 0.5f, 0.1f));
             sequence.OnComplete(OnAnimationEnded);
         }
