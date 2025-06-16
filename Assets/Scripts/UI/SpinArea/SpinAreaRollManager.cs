@@ -11,6 +11,7 @@ namespace UI.SpinArea
         [SerializeField] private Transform _rollAreaRoot;
 
         [SerializeField] private float duration = 2f; // Duration in seconds
+        [SerializeField] private float delayAtEnd = 0.5f; // Duration in seconds
         [SerializeField] private int fullTurns = 2;   // Number of full 360° turns
         [SerializeField] private Ease easeType = Ease.Linear;
         
@@ -24,7 +25,7 @@ namespace UI.SpinArea
                 .SetEase(easeType)
                 .OnComplete(() =>
                 {
-                    DOVirtual.DelayedCall(0.5f, () => SignalBus.Instance.Fire<RollCompletedSignal>());
+                    DOVirtual.DelayedCall(delayAtEnd, () => SignalBus.Instance.Fire<RollCompletedSignal>());
                 });
         }
 
