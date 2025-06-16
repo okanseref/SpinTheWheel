@@ -9,7 +9,7 @@ namespace Game
         public ZoneSettingsCollection ZoneSettingsCollection { get; private set; }
         public GameSettings GameSettings { get; private set; }
         
-        private void Awake()
+        public void Awake()
         {
             ZoneSettingsCollection = Resources.Load<ZoneSettingsCollection>("ScriptableObjects/ZoneSettingsCollection");
             GameSettings = Resources.Load<GameSettings>("ScriptableObjects/GameSettings");
