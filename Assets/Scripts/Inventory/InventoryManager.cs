@@ -76,6 +76,7 @@ namespace Inventory
                     if (subTypeDictionary[exchangeData.Subtype] >= exchangeData.Value)
                     {
                         subTypeDictionary[exchangeData.Subtype] -= exchangeData.Value;
+                        SignalBus.Instance.Fire(new InventoryUpdatedSignal(exchangeData.Type, exchangeData.Subtype, subTypeDictionary[exchangeData.Subtype]));
                         return true;
                     }
                 }
