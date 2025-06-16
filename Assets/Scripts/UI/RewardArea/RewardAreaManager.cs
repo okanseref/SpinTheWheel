@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Exchange;
+using Game;
 using Game.Signal;
 using Inventory;
 using UI.Exchange;
@@ -67,6 +68,9 @@ namespace UI.RewardArea
 
         private void OnExitClicked()
         {
+            if(!GameStateManager.Instance.IsFreeState())
+                return;
+            
             if (Rewards.Count > 0)
             {
                 PopupManager.Instance.Show<ExitPopup, ExitPopupData>(new ExitPopupData(Rewards));

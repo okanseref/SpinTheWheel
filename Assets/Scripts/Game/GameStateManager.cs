@@ -9,18 +9,24 @@ using Zone;
 
 namespace Game
 {
-    public class GameStateManager : MonoBehaviour
+    public class GameStateManager : Singleton<GameStateManager>
     {
         private int _currentZoneIndex = GameConstants.FirstLevelIndex;
         private int _rollResult = -1;
         private ZoneSettings _currentZoneSettings;
         private ZoneType _zoneType;
+        private bool _isFreeState = false;
         
         private void Start()
         {
             PrepareForSpin();
             
             SignalBus.Instance.Subscribe<GameResetSignal>(ResetGame);
+        }
+
+        public bool IsFreeState()
+        {
+            return _isFreeState;
         }
 
         private void PrepareForSpin()
@@ -41,11 +47,13 @@ namespace Game
             SpinAreaThemeManager.Instance.LoadSpinArea(_zoneType);
             SpinAreaRollManager.Instance.ResetRoll();
 
+            _isFreeState = true;
             SignalBus.Instance.Subscribe<SpinClickedSignal>(StartSpin);
         }
 
         private void StartSpin()
         {
+            _isFreeState = false;
             SignalBus.Instance.Unsubscribe<SpinClickedSignal>(StartSpin);
 
             SignalBus.Instance.Subscribe<RollCompletedSignal>(OnRollComplete);
