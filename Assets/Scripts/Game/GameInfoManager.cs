@@ -7,12 +7,12 @@ namespace Game
     public class GameInfoManager : Singleton<GameInfoManager>
     {
         public ZoneSettingsCollection ZoneSettingsCollection { get; private set; }
-        public SpecialZoneSettings SpecialZoneSettings { get; private set; }
+        public GameSettings GameSettings { get; private set; }
         
         private void Awake()
         {
             ZoneSettingsCollection = Resources.Load<ZoneSettingsCollection>("ScriptableObjects/ZoneSettingsCollection");
-            SpecialZoneSettings = Resources.Load<SpecialZoneSettings>("ScriptableObjects/SpecialZoneSettings");
+            GameSettings = Resources.Load<GameSettings>("ScriptableObjects/GameSettings");
         }
 
         public ZoneSettings GetZoneLooped(int zoneIndex)
@@ -23,10 +23,10 @@ namespace Game
 
         public ZoneType GetZoneType(int zoneIndex)
         {
-            if (zoneIndex != 0 && zoneIndex % SpecialZoneSettings.GoldenSpinPeriod  == 0)
+            if (zoneIndex != 0 && zoneIndex % GameSettings.GoldenSpinPeriod  == 0)
                 return ZoneType.Golden;
             
-            if (zoneIndex != 0 && zoneIndex % SpecialZoneSettings.SilverSpinPeriod  == 0)
+            if (zoneIndex != 0 && zoneIndex % GameSettings.SilverSpinPeriod  == 0)
                 return ZoneType.Silver;
 
             return ZoneType.Basic;
