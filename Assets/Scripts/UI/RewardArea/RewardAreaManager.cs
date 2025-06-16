@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Exchange;
+using Game.Signal;
+using Inventory;
 using UI.Exchange;
 using UI.Popup;
 using UnityEngine;
@@ -49,8 +51,11 @@ namespace UI.RewardArea
             LayoutRebuilder.ForceRebuildLayoutImmediate(RewardRootTransform as RectTransform);
         }
 
-        public void Reset()
+        public void ResetArea(bool giveRewards)
         {
+            if(giveRewards)
+                InventoryManager.Instance.AddExchangeDatas(Rewards);
+            
             foreach (var exchangeView in RewardViewDictionary.Values)
             {
                 ExchangeViewFactory.Instance.ReturnExchangeView(exchangeView);

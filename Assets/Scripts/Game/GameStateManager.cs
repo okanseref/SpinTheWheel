@@ -33,7 +33,7 @@ namespace Game
             {
                 foreach (var reward in _currentZoneSettings.Rewards)
                 {
-                    reward.Value *= GameInfoManager.Instance.SpecialZoneSettings.GoldenSpinRewardMultiplier;
+                    reward.Value *= GameInfoManager.Instance.GameSettings.GoldenSpinRewardMultiplier;
                 }
             }
             
@@ -57,6 +57,7 @@ namespace Game
             if (_zoneType == ZoneType.Basic && _currentZoneSettings.BombIndex == _rollResult)
             {
                 // Lose
+                SignalBus.Instance.Subscribe<RevivedSignal>(OnRevived);
                 PopupManager.Instance.Show<LosePopup>();
                 return;
             }
@@ -76,10 +77,17 @@ namespace Game
             SignalBus.Instance.Unsubscribe<RewardGivenSignal>(OnRewardGiven);
         }
 
-        public void ResetGame()
+        private void OnRevived()
+        {
+            SignalBus.Instance.Unsubscribe<RevivedSignal>(OnRevived);
+            _currentZoneIndex++;
+            PrepareForSpin();
+        }
+
+        public void ResetGame(GameResetSignal signal)
         {
             _currentZoneIndex = GameConstants.FirstLevelIndex;
-            RewardAreaManager.Instance.Reset();
+            RewardAreaManager.Instance.ResetArea(signal.IsRewardsClaimed);
             PrepareForSpin();
         }
     }

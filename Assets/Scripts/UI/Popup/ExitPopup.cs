@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Exchange;
 using Game.Signal;
+using Inventory;
 using UI.Exchange;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -38,8 +39,7 @@ namespace UI.Popup
 
         private void OnClaimClicked()
         {
-            // TODO Give resources to user data for extra
-            SignalBus.Instance.Fire<GameResetSignal>();
+            SignalBus.Instance.Fire(new GameResetSignal(true));
             Hide();
         }
 
