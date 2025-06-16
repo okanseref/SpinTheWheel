@@ -84,5 +84,10 @@ namespace Inventory
 
             return false;
         }
+
+        public void ClearInventory()
+        {
+            _inventoryDictionary.Clear();
+        }
     }
 }
