@@ -48,12 +48,16 @@ namespace Game
         {
             SignalBus.Instance.Unsubscribe<SpinClickedSignal>(StartSpin);
 
+            SignalBus.Instance.Subscribe<RollCompletedSignal>(OnRollComplete);
+
             _rollResult = Random.Range(0, 8);
-            SpinAreaRollManager.Instance.StartRoll(_rollResult, OnRollComplete);
+            SpinAreaRollManager.Instance.StartRoll(_rollResult);
         }
 
         private void OnRollComplete()
         {
+            SignalBus.Instance.Unsubscribe<RollCompletedSignal>(OnRollComplete);
+
             if (_zoneType == ZoneType.Basic && _currentZoneSettings.BombIndex == _rollResult)
             {
                 // Lose
