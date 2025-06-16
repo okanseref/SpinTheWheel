@@ -24,10 +24,8 @@ namespace UI.Popup
             GiveUpButton.onClick.AddListener(OnExitClicked);
             ReviveButton.onClick.AddListener(OnReviveClicked);
 
-            _reviveExchangeVisual =
-                ExchangeViewFactory.Instance.CreateExchangeView(GameInfoManager.Instance.GameSettings.ReviveCost,
-                    ReviveExchangeRoot);
-
+            _reviveExchangeVisual = ExchangeViewFactory.Instance.CreateExchangeView(GameInfoManager.Instance.GameSettings.ReviveCost, ReviveExchangeRoot);
+            
             ReviveButton.interactable =
                 InventoryManager.Instance.HasExchangeData(GameInfoManager.Instance.GameSettings.ReviveCost);
         }

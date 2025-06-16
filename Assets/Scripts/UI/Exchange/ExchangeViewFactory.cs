@@ -20,6 +20,7 @@ namespace UI.Exchange
             ExchangeView viewInstance = _objectPool.Get();
             Transform exchangeTransform;
             (exchangeTransform = viewInstance.transform).SetParent(customParent);
+            ((RectTransform)exchangeTransform).sizeDelta = new Vector2(100, 100);
             exchangeTransform.localScale = Vector3.one;
             exchangeTransform.localPosition = Vector3.zero;
             exchangeTransform.localRotation = Quaternion.identity;
