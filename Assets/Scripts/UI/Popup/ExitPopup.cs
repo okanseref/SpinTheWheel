@@ -2,9 +2,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Exchange;
 using Game.Signal;
-using Inventory;
 using UI.Exchange;
+#if UNITY_EDITOR
 using UnityEditor.SceneManagement;
+#endif
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -56,6 +57,7 @@ namespace UI.Popup
             }
         }
 
+        #if UNITY_EDITOR
         private void OnValidate()
         {
             var prefabStage = PrefabStageUtility.GetCurrentPrefabStage();
@@ -73,6 +75,7 @@ namespace UI.Popup
         
             UnityEditor.EditorUtility.SetDirty(this);
         }
+        #endif
     }
 
     public class ExitPopupData

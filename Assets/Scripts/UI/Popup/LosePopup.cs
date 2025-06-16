@@ -1,10 +1,11 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Game;
 using Game.Signal;
 using Inventory;
 using UI.Exchange;
+#if UNITY_EDITOR
 using UnityEditor.SceneManagement;
+#endif
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -51,6 +52,7 @@ namespace UI.Popup
             ExchangeViewFactory.Instance.ReturnExchangeView(_reviveExchangeVisual);
         }
 
+        #if UNITY_EDITOR
         private void OnValidate()
         {
             var prefabStage = PrefabStageUtility.GetCurrentPrefabStage();
@@ -66,5 +68,6 @@ namespace UI.Popup
             ReviveButton = reviveButtonReference != null ? reviveButtonReference : ReviveButton;
             GiveUpButton = giveUpButtonReference != null ? giveUpButtonReference : GiveUpButton;
         }
+        #endif
     }
 }

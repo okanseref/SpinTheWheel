@@ -1,0 +1,18 @@
+{
+    "name": "ZoneEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:19d0d1f0974c386448edc4ef941af12e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
