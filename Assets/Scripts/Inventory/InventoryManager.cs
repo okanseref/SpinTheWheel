@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Exchange;
+using Inventory.Signal;
 using Utils;
 
 namespace Inventory
@@ -7,6 +8,14 @@ namespace Inventory
     public class InventoryManager : Singleton<InventoryManager>
     {
         private Dictionary<ExchangeType, Dictionary<int, int>> _inventoryDictionary = new();
+
+        public void AddExchangeDatas(List<ExchangeData> exchangeDatas)
+        {
+            foreach (var exchangeData in exchangeDatas)
+            {
+                AddExchangeData(exchangeData);
+            }
+        }
         
         public void AddExchangeData(ExchangeData exchangeData)
         {
@@ -15,11 +24,11 @@ namespace Inventory
                 if (subTypeDictionary.ContainsKey(exchangeData.Subtype))
                 {
                     subTypeDictionary[exchangeData.Subtype] += exchangeData.Value;
+                    SignalBus.Instance.Fire(new InventoryUpdatedSignal(exchangeData.Type, exchangeData.Subtype, subTypeDictionary[exchangeData.Subtype]));
+                    return;
                 }
-                else
-                {
-                    subTypeDictionary[exchangeData.Subtype] = exchangeData.Value;
-                }
+
+                subTypeDictionary[exchangeData.Subtype] = exchangeData.Value;
             }
             else
             {
@@ -28,6 +37,8 @@ namespace Inventory
                     [exchangeData.Subtype] = exchangeData.Value
                 };
             }
+            
+            SignalBus.Instance.Fire(new InventoryUpdatedSignal(exchangeData.Type, exchangeData.Subtype, exchangeData.Value));
         }
 
         public bool HasExchangeData(ExchangeData exchangeData)
@@ -41,6 +52,19 @@ namespace Inventory
             }
 
             return false;
+        }
+
+        public int GetExchangeDataValue(ExchangeType type, int subType)
+        {
+            if (_inventoryDictionary.TryGetValue(type, out var subTypeDictionary))
+            {
+                if (subTypeDictionary.TryGetValue(subType, out var value))
+                {
+                    return value;
+                }
+            }
+
+            return 0;
         }
 
         public bool RemoveExchangeData(ExchangeData exchangeData)
