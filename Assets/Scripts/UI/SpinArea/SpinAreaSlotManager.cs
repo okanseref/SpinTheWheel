@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UI.Exchange;
 using UI.SpinArea.Signal;
@@ -38,6 +36,8 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
                 // Put bomb
                 DeathSlotView.transform.SetParent(SpinSlotRoots[i]);
                 DeathSlotView.gameObject.SetActive(true);
+                DeathSlotView.transform.localPosition = Vector3.zero;
+                DeathSlotView.transform.localRotation = Quaternion.identity;
                 continue;
             }
 
