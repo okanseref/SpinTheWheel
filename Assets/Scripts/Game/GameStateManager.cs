@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using Game.Signal;
+﻿using Game.Signal;
 using Reward;
 using Spin;
 using UI.Popup;

@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using Game.Signal;
 using UI.SpinArea.Signal;
 using UnityEngine;

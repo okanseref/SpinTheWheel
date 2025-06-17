@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using Exchange;
-using Game;
 using Game.Signal;
 using Inventory;
-using UI.Exchange;
 using Utils;
 
 namespace Reward
@@ -11,11 +9,6 @@ namespace Reward
     public class RewardManager : Singleton<RewardManager>
     {
         private List<ExchangeData> Rewards = new();
-        
-        private void Start()
-        {
-            
-        }
 
         public void AddReward(ExchangeData exchangeData)
         {
