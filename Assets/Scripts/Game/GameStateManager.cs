@@ -43,9 +43,7 @@ namespace Game
                 }
             }
             
-            SpinAreaSlotManager.Instance.Init(_currentZoneSettings, _zoneType);
-            SpinAreaThemeManager.Instance.LoadSpinArea(_zoneType);
-            SpinAreaRollManager.Instance.ResetRoll();
+            SignalBus.Instance.Fire(new PrepareSpinSignal(_currentZoneSettings, _zoneType));
 
             _isFreeState = true;
             SignalBus.Instance.Subscribe<SpinClickedSignal>(StartSpin);
@@ -59,7 +57,8 @@ namespace Game
             SignalBus.Instance.Subscribe<RollCompletedSignal>(OnRollComplete);
 
             _rollResult = Random.Range(0, 8);
-            SpinAreaRollManager.Instance.StartRoll(_rollResult);
+            
+            SignalBus.Instance.Fire(new StartRollSignal(_rollResult));
         }
 
         private void OnRollComplete()

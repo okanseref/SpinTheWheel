@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Game.Signal;
 using UI.Exchange;
 using UI.SpinArea.Signal;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 using Utils;
 using Zone;
 
-public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
+public class SpinAreaSlotManager : MonoBehaviour
 {
     [SerializeField] public List<Transform> SpinSlotRoots;
     [SerializeField] public GameObject DeathSlotView;
@@ -22,16 +23,18 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
     private void Start()
     {
         SpinButton.onClick.AddListener(OnSpinClicked);
+        
+        SignalBus.Instance.Subscribe<PrepareSpinSignal>(OnPrepareSpin);
     }
 
-    public void Init(ZoneSettings zoneSettings, ZoneType zoneType)
+    public void OnPrepareSpin(PrepareSpinSignal signal)
     {
         ClearArea();
         SpinButton.gameObject.SetActive(true);
 
-        for (int i = 0; i < zoneSettings.Rewards.Count; i++)
+        for (int i = 0; i < signal.ZoneSettings.Rewards.Count; i++)
         {
-            if (i == zoneSettings.BombIndex && zoneType == ZoneType.Basic)
+            if (i == signal.ZoneSettings.BombIndex && signal.ZoneType == ZoneType.Basic)
             {
                 // Put bomb
                 DeathSlotView.transform.SetParent(SpinSlotRoots[i]);
@@ -41,7 +44,7 @@ public class SpinAreaSlotManager : Singleton<SpinAreaSlotManager>
                 continue;
             }
 
-            var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(zoneSettings.Rewards[i], SpinSlotRoots[i]);
+            var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(signal.ZoneSettings.Rewards[i], SpinSlotRoots[i]);
             _usedViews.Add(exchangeView);
         }
     }

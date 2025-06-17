@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Signal;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
 using Zone;
 
-public class SpinAreaThemeManager : Singleton<SpinAreaThemeManager>
+public class SpinAreaThemeManager : MonoBehaviour
 {
     [SerializeField] private Image SpinAreaCursorImage;
     [SerializeField] private Image SpinAreaBaseImage;
@@ -19,10 +21,14 @@ public class SpinAreaThemeManager : Singleton<SpinAreaThemeManager>
     [SerializeField] private Sprite SpinGoldenBase;
     [SerializeField] private Sprite SpinGoldenCursor;
 
-    public void LoadSpinArea(ZoneType zoneType)
+    private void Start()
     {
-        //
-        switch (zoneType)
+        SignalBus.Instance.Subscribe<PrepareSpinSignal>(LoadSpinArea);
+    }
+
+    public void LoadSpinArea(PrepareSpinSignal signal)
+    {
+        switch (signal.ZoneType)
         {
             case ZoneType.Basic:
                 SpinAreaCursorImage.sprite = SpinBronzeCursor;
