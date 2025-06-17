@@ -58,7 +58,7 @@ namespace UI.RewardArea
 
             var rewards = RewardManager.Instance.GetRewards();
             
-            if (rewards.Count > 0)
+            if (rewards.Count > 0 && PopupManager.Instance.GetActivePopup<ExitPopup>() == null)
             {
                 PopupManager.Instance.Show<ExitPopup, ExitPopupData>(new ExitPopupData(rewards));
             }
