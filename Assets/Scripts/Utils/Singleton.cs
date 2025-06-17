@@ -20,7 +20,9 @@ namespace Utils
                         _instance = singletonObject.AddComponent<T>();
                         singletonObject.name = typeof(T) + " (Singleton)";
 
-                        DontDestroyOnLoad(singletonObject);
+                        // For unit tests
+                        if(Application.isPlaying)
+                            DontDestroyOnLoad(singletonObject);
                     }
                 }
 

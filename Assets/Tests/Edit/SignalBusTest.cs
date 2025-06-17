@@ -14,7 +14,7 @@ namespace Tests.Edit
     {
         private int _counter = 0;
         [Test]
-        public void SilverZoneTest()
+        public void SignalBusSubscribeTest()
         {
             SignalBus.Instance.Subscribe<GameResetSignal>(OnSignal);
             SignalBus.Instance.Fire(new GameResetSignal());
