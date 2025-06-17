@@ -1,22 +1,31 @@
-﻿using Game.Signal;
+﻿using System;
+using Game.Signal;
+using Reward;
+using Spin;
 using UI.Popup;
 using UI.RewardArea;
-using UI.SpinArea;
 using UI.SpinArea.Signal;
-using UnityEngine;
 using Utils;
 using Zone;
+using Random = UnityEngine.Random;
 
 namespace Game
 {
     public class GameStateManager : Singleton<GameStateManager>
     {
+        private ISpinRule _spinRule;
         private int _currentZoneIndex = GameConstants.FirstLevelIndex;
         private int _rollResult = -1;
         private ZoneSettings _currentZoneSettings;
         private ZoneType _zoneType;
         private bool _isFreeState = false;
-        
+
+        private void Awake()
+        {
+            // _spinRule = new RiggedSpinRule();
+            _spinRule = new NormalSpinRule();
+        }
+
         private void Start()
         {
             PrepareForSpin();
@@ -56,7 +65,7 @@ namespace Game
 
             SignalBus.Instance.Subscribe<RollCompletedSignal>(OnRollComplete);
 
-            _rollResult = Random.Range(0, 8);
+            _rollResult = _spinRule.GetResult();
             
             SignalBus.Instance.Fire(new StartRollSignal(_rollResult));
         }
