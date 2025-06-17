@@ -1,13 +1,11 @@
-﻿using System;
+﻿using System.Collections;
 using Game.Signal;
 using Reward;
 using Spin;
 using UI.Popup;
-using UI.RewardArea;
 using UI.SpinArea.Signal;
 using Utils;
 using Zone;
-using Random = UnityEngine.Random;
 
 namespace Game
 {

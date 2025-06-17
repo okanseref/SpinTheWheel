@@ -20,10 +20,7 @@ namespace UI.SpinArea
         private void Awake()
         {
             DeathSlotView.gameObject.SetActive(false);
-        }
-
-        private void Start()
-        {
+            
             SpinButton.onClick.AddListener(OnSpinClicked);
         
             SignalBus.Instance.Subscribe<PrepareSpinSignal>(OnPrepareSpin);
