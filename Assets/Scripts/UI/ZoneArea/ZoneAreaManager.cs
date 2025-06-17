@@ -30,6 +30,7 @@ namespace UI.ZoneArea
             Initialize();
             
             SignalBus.Instance.Subscribe<RewardGivenSignal>(OnLevelCompleted);
+            SignalBus.Instance.Subscribe<RevivedSignal>(OnLevelCompleted);
             SignalBus.Instance.Subscribe<GameResetSignal>(Reset);
         }
 
