@@ -7,68 +7,71 @@ using UnityEngine.UI;
 using Utils;
 using Zone;
 
-public class SpinAreaSlotManager : MonoBehaviour
+namespace UI.SpinArea
 {
-    [SerializeField] public List<Transform> SpinSlotRoots;
-    [SerializeField] public GameObject DeathSlotView;
-    [SerializeField] public Button SpinButton;
-
-    private List<ExchangeView> _usedViews = new();
-
-    private void Awake()
+    public class SpinAreaSlotManager : MonoBehaviour
     {
-        DeathSlotView.gameObject.SetActive(false);
-    }
+        [SerializeField] public List<Transform> SpinSlotRoots;
+        [SerializeField] public GameObject DeathSlotView;
+        [SerializeField] public Button SpinButton;
 
-    private void Start()
-    {
-        SpinButton.onClick.AddListener(OnSpinClicked);
-        
-        SignalBus.Instance.Subscribe<PrepareSpinSignal>(OnPrepareSpin);
-    }
+        private List<ExchangeView> _usedViews = new();
 
-    public void OnPrepareSpin(PrepareSpinSignal signal)
-    {
-        ClearArea();
-        SpinButton.gameObject.SetActive(true);
-
-        for (int i = 0; i < signal.ZoneSettings.Rewards.Count; i++)
+        private void Awake()
         {
-            if (i == signal.ZoneSettings.BombIndex && signal.ZoneType == ZoneType.Basic)
+            DeathSlotView.gameObject.SetActive(false);
+        }
+
+        private void Start()
+        {
+            SpinButton.onClick.AddListener(OnSpinClicked);
+        
+            SignalBus.Instance.Subscribe<PrepareSpinSignal>(OnPrepareSpin);
+        }
+
+        public void OnPrepareSpin(PrepareSpinSignal signal)
+        {
+            ClearArea();
+            SpinButton.gameObject.SetActive(true);
+
+            for (int i = 0; i < signal.ZoneSettings.Rewards.Count; i++)
             {
-                // Put bomb
-                DeathSlotView.transform.SetParent(SpinSlotRoots[i]);
-                DeathSlotView.gameObject.SetActive(true);
-                DeathSlotView.transform.localPosition = Vector3.zero;
-                DeathSlotView.transform.localRotation = Quaternion.identity;
-                continue;
+                if (i == signal.ZoneSettings.BombIndex && signal.ZoneType == ZoneType.Basic)
+                {
+                    // Put bomb
+                    DeathSlotView.transform.SetParent(SpinSlotRoots[i]);
+                    DeathSlotView.gameObject.SetActive(true);
+                    DeathSlotView.transform.localPosition = Vector3.zero;
+                    DeathSlotView.transform.localRotation = Quaternion.identity;
+                    continue;
+                }
+
+                var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(signal.ZoneSettings.Rewards[i], SpinSlotRoots[i]);
+                _usedViews.Add(exchangeView);
             }
-
-            var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(signal.ZoneSettings.Rewards[i], SpinSlotRoots[i]);
-            _usedViews.Add(exchangeView);
         }
-    }
 
-    public void ClearArea()
-    {
-        DeathSlotView.gameObject.SetActive(false);
-
-        foreach (var exchangeView in _usedViews)
+        public void ClearArea()
         {
-            ExchangeViewFactory.Instance.ReturnExchangeView(exchangeView);
-        }
+            DeathSlotView.gameObject.SetActive(false);
+
+            foreach (var exchangeView in _usedViews)
+            {
+                ExchangeViewFactory.Instance.ReturnExchangeView(exchangeView);
+            }
         
-        _usedViews.Clear();
-    }
+            _usedViews.Clear();
+        }
 
-    private void OnSpinClicked()
-    {
-        SpinButton.gameObject.SetActive(false);
-        SignalBus.Instance.Fire(new SpinClickedSignal());
-    }
+        private void OnSpinClicked()
+        {
+            SpinButton.gameObject.SetActive(false);
+            SignalBus.Instance.Fire(new SpinClickedSignal());
+        }
 
-    private void OnValidate()
-    {
-        SpinButton = GameObject.Find("ui_button_spin").GetComponent<Button>();
+        private void OnValidate()
+        {
+            SpinButton = GameObject.Find("ui_button_spin").GetComponent<Button>();
+        }
     }
 }

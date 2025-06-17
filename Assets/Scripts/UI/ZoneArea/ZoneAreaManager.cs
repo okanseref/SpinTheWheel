@@ -7,7 +7,7 @@ using Utils;
 
 namespace UI.ZoneArea
 {
-    public class ZoneAreaManager : Singleton<ZoneAreaManager>
+    public class ZoneAreaManager : MonoBehaviour
     {
         [SerializeField] private int maxElementCount = 13;
         [SerializeField] private GridLayoutGroup zoneGridLayout;

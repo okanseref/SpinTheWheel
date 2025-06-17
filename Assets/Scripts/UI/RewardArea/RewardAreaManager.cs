@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Exchange;
 using Game;
 using Game.Signal;
-using Inventory;
+using Reward;
 using UI.Exchange;
 using UI.Popup;
 using UnityEngine;
@@ -12,68 +11,56 @@ using Utils;
 
 namespace UI.RewardArea
 {
-    public class RewardAreaManager : Singleton<RewardAreaManager>
+    public class RewardAreaManager : MonoBehaviour
     {
         [SerializeField] private Button ExitButton;
         [SerializeField] private Transform RewardRootTransform;
         
         private Dictionary<ExchangeData, ExchangeView> RewardViewDictionary = new();
-        private List<ExchangeData> Rewards = new();
 
         private void Start()
         {
             ExitButton.onClick.AddListener(OnExitClicked);
+            
+            SignalBus.Instance.Subscribe<AddRewardSignal>(AddReward);
+            SignalBus.Instance.Subscribe<ResetRewardAreaSignal>(ResetArea);
         }
 
-        public void AddReward(ExchangeData exchangeData)
+        public void AddReward(AddRewardSignal signal)
         {
-            var itemInRewards = Rewards.Find((x) => x.Type == exchangeData.Type && x.Subtype == exchangeData.Subtype);
-
-            if (itemInRewards != null)
+            if (RewardViewDictionary.TryGetValue(signal.Reward, out var exchangeView))
             {
-                // Reward already exists add
-                itemInRewards.Value += exchangeData.Value;
-                
-                RewardViewDictionary.TryGetValue(itemInRewards, out var view);
-                if (view != null)
-                {
-                    view.SetValueText(itemInRewards.Value);
-                }
+                exchangeView.SetValueText(signal.Reward.Value);
             }
             else
             {
-                // New reward
-                var newReward = exchangeData.Clone();
-                Rewards.Add(newReward);
-                var exchangeView = ExchangeViewFactory.Instance.CreateExchangeView(newReward, RewardRootTransform);
-                RewardViewDictionary.Add(newReward, exchangeView);
+                var exchangeViewNew = ExchangeViewFactory.Instance.CreateExchangeView(signal.Reward, RewardRootTransform);
+                RewardViewDictionary.Add(signal.Reward, exchangeViewNew);
             }
             
             LayoutRebuilder.ForceRebuildLayoutImmediate(RewardRootTransform as RectTransform);
         }
 
-        public void ResetArea(bool giveRewards)
+        public void ResetArea(ResetRewardAreaSignal signal)
         {
-            if(giveRewards)
-                InventoryManager.Instance.AddExchangeDatas(Rewards);
-            
             foreach (var exchangeView in RewardViewDictionary.Values)
             {
                 ExchangeViewFactory.Instance.ReturnExchangeView(exchangeView);
             }
             
             RewardViewDictionary.Clear();
-            Rewards.Clear();
         }
 
         private void OnExitClicked()
         {
             if(!GameStateManager.Instance.IsFreeState())
                 return;
+
+            var rewards = RewardManager.Instance.GetRewards();
             
-            if (Rewards.Count > 0)
+            if (rewards.Count > 0)
             {
-                PopupManager.Instance.Show<ExitPopup, ExitPopupData>(new ExitPopupData(Rewards));
+                PopupManager.Instance.Show<ExitPopup, ExitPopupData>(new ExitPopupData(rewards));
             }
         }
 

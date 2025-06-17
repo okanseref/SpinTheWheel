@@ -90,7 +90,7 @@ namespace Game
 
         private void OnRewardGiven(RewardGivenSignal rewardGivenSignal)
         {
-            RewardAreaManager.Instance.AddReward(rewardGivenSignal.Reward);
+            RewardManager.Instance.AddReward(rewardGivenSignal.Reward);
             _currentZoneIndex++;
             PrepareForSpin();
             
@@ -107,8 +107,13 @@ namespace Game
         public void ResetGame(GameResetSignal signal)
         {
             _currentZoneIndex = GameConstants.FirstLevelIndex;
-            RewardAreaManager.Instance.ResetArea(signal.IsRewardsClaimed);
+            RewardManager.Instance.ResetRewards(signal.IsRewardsClaimed);
             PrepareForSpin();
+        }
+
+        public int GetCurrentZoneIndex()
+        {
+            return _currentZoneIndex;
         }
     }
 }
