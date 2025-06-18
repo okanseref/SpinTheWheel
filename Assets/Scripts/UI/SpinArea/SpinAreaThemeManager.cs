@@ -20,7 +20,7 @@ namespace UI.SpinArea
         [SerializeField] private Sprite SpinGoldenBase;
         [SerializeField] private Sprite SpinGoldenCursor;
 
-        private void Start()
+        private void Awake()
         {
             SignalBus.Instance.Subscribe<PrepareSpinSignal>(LoadSpinArea);
         }
